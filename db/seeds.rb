@@ -6,15 +6,15 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-u1 = User.new(email: "paula@test.fr", password: "123456", address: "Marseille")
+User.destroy_all
+
+u1 = User.new(email: "paula@test.fr", password: "123456")
 u1.save!
 
-my_disease = Disease.new(
-	          name: "paula@test.fr",
-              symptoms: "123456",
-              behavior: "Marseille",
-              when_consult: "dqdsfq",
-              need_know: "qsdfa",
-              prevention: "dfqdfq")
-my_disease.user = u1
-my_disease.save!
+e1 = Child.new(first_name: "Lola", birth_date: "2019, 11, 10", weight:500, cardiac: false, respiratory: false, prematurity: false)
+e1.user = u1
+e1.save!
+
+a1 = Analyse.new(symptom: ["toux"])
+a1.child = e1
+a1.save!
