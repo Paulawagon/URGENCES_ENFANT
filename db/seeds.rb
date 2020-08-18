@@ -23,5 +23,7 @@ a1.child = e1
 a1.save!
 
 
+
 d1 = Disease.new(name:"Fièvre",symptoms: ["fièvre"], behavior: " Doliprane", when_consult:"Après 48h de fièvre", need_know: " ", prevention: " ")
 d1.save!
+
