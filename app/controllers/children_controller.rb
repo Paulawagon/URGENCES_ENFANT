@@ -8,7 +8,7 @@ class ChildrenController < ApplicationController
     @child.user = current_user
     @child.save
 
-    redirect_to new_child_path
+    redirect_to analyses_path
   end
 
   def update
