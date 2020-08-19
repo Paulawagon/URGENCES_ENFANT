@@ -7,13 +7,13 @@ Rails.application.routes.draw do
     resources :analyses, only: [:create, :new, :destroy]
   end
   get "/direction", to: "analyses#direction"
+
   get "/children/:child_id/analyses/new", to: "analyses#new"
   get "/children/:child_id/analyses", to: "analyse#create"
-  get "diseases/behavior/id", to: "diseases#behavior"
-  get "diseases/need_to_know/id", to: "diseases#need_know"
-  get "diseases/when_consult/id", to: "diseases#consult"
-  get "diseases/prevention/id", to: "diseases#prevention"
-
 
   resources :diseases
+  get "/diseases/:id/behavior", to: "diseases#behavior", as: :behavior
+  get "/diseases/:id/need_to_know", to: "diseases#need_know", as: :need_know
+  get "/diseases/:id/when_consult", to: "diseases#consult", as: :consult
+  get "/diseases/:id/prevention", to: "diseases#prevention", as: :prevention
 end
