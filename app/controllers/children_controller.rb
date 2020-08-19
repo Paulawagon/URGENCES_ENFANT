@@ -1,5 +1,5 @@
 class ChildrenController < ApplicationController
-  before_action :set_child, only: [:update, :edit, :destroy]
+  before_action :set_child, only: %i[update edit destroy]
 
   def new
     @child = Child.new

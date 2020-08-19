@@ -24,6 +24,6 @@ a1.save!
 
 
 
-d1 = Disease.new(name:"Fièvre",symptoms: ["fièvre"], behavior: " Doliprane", when_consult:"Après 48h de fièvre", need_know: " ", prevention: " ")
+d1 = Disease.new(name:"Fièvre",symptoms: ["fièvre"], behavior: " Doliprane", when_consult:"Après 48h de fièvre", need_know: "peut pas etre blank", prevention: "peut pas etre blank")
 d1.save!
 
