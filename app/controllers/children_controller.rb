@@ -7,10 +7,13 @@ class ChildrenController < ApplicationController
 
   def create
     @child = Child.new(child_params)
-    @child.user = current_user
+    @child.user = current_user if user_signed_in?
     @child.save
-
-    redirect_to analyses_path
+    if user_signed_in?
+      redirect_to profil_path
+    else
+      redirect_to root_path
+    end
   end
 
   def update
