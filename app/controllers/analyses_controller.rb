@@ -21,9 +21,4 @@ class AnalysesController < ApplicationController
 
 
   end
-
-
-  def direction
-  end
-
 end
