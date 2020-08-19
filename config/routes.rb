@@ -15,5 +15,5 @@ Rails.application.routes.draw do
   get "/diseases/:id/need_to_know", to: "diseases#need_know", as: :need_know
   get "/diseases/:id/when_consult", to: "diseases#consult", as: :consult
   get "/diseases/:id/prevention", to: "diseases#prevention", as: :prevention
-  get "/direction", to: "hospitals/direction"
+  get "/direction", to: "hospitals#direction"
 end
