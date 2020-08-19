@@ -1,1 +1,5 @@
-<h1>New Analyse</h1>
+<h1>Symptoms</h1>
+<%= simple_form_for([@child, @analysis]) do |f| %>
+			<%= f.input :symptoms, collection: @symptoms, as: :check_boxes, label_on: :left %>
+			<%= f.submit "Analyse", class: "btn btn-outline-secondary btn-lg mb-2" %>
+<% end %>
