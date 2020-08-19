@@ -11,7 +11,7 @@ User.destroy_all
 Disease.destroy_all
 
 
-u1 = User.new(email: "paula@test.fr", password: "123456")
+u1 = User.new(first_name: "Paula" last_name: "Pisa" email: "paula@test.fr", password: "123456")
 u1.save!
 
 e1 = Child.new(first_name: "Lola", birth_date: "2019, 11, 10", weight:500, cardiac: false, respiratory: false, prematurity: false)
