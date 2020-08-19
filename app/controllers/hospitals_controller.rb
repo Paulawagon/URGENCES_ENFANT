@@ -5,7 +5,18 @@ class HospitalsController < ApplicationController
     @markers = @hospitals.map do |hospital|
       {
         lat: hospital.latitude,
-        lng: hospital.longitude
+        lng: hospital.longitude,
+      }
+    end
+  end
+
+  def direction
+    @hospitals = Hospital.geocoded
+
+    @markers = @hospitals.map do |hospital|
+      {
+        lat: hospital.latitude,
+        lng: hospital.longitude,
       }
     end
   end

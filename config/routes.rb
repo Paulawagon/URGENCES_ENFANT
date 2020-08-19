@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   resources :children, only: [:create, :new, :destroy, :update, :edit] do
     resources :analyses, only: [:create, :new, :destroy]
   end
-  get "/direction", to: "analyses#direction"
+  get "/direction", to: "hospitals#direction"
   get "diseases/behavior/id", to: "diseases#behavior"
   get "diseases/need_to_know/id", to: "diseases#need_know"
   get "diseases/when_consult/id", to: "diseases#consult"

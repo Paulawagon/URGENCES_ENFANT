@@ -5,7 +5,4 @@ class AnalysesController < ApplicationController
   def new
     @analysis = Analysis.new
   end
-
-  def direction
-  end
 end
