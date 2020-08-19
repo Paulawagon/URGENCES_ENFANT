@@ -8,7 +8,7 @@ class HospitalsController < ApplicationController
     @markers = @hospitals.map do |hospital|
       {
         lat: hospital.latitude,
-        lng: hospital.longitude,
+        lng: hospital.longitude
       }
     end
   end
