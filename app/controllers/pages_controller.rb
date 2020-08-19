@@ -5,5 +5,6 @@ class PagesController < ApplicationController
   end
 
   def profil
+    @children = current_user.children
   end
 end

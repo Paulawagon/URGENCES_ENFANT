@@ -1,15 +1,15 @@
 <%= simple_form_for(@child) do |f| %>
 			<%= f.input :first_name,
-               input_html: { autocomplete: "Name", class: "input-line full-width" } %>
+               input_html: { autocomplete: "name", class: "input-line full-width" } %>
 			<%= f.input :birth_date,
                input_html: { autocomplete: "Birth date", class: "input-line full-width" } %>
-               <%= f.input :weight,
-                           input_html: { autocomplete: "Weight", class: "input-line full-width" } %>
+            <%= f.input :weight,
+                        input_html: { autocomplete: "Weight", class: "input-line full-width" } %>
 			<%= f.input :cardiac,
                input_html: { autocomplete: "Cardiac", class: "input-line full-width" } %>
 			<%= f.input :respiratory,
                input_html: { autocomplete: "Respiratory", class: "input-line full-width" } %>
             <%= f.input :prematurity,
                         input_html: { autocomplete: "Pespiratory", class: "input-line full-width" } %>
-			<%= f.submit "Ajoutez votre enfant", class: "btn btn-outline-secondary btn-lg mb-2" %>
+			<%= f.submit "Modifiez votre enfant", class: "btn btn-outline-secondary btn-lg mb-2" %>
 <% end %>
