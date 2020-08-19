@@ -3,6 +3,7 @@ class AnalysesController < ApplicationController
   end
 
   def new
+    @analysis = Analysis.new
   end
 
   def direction
