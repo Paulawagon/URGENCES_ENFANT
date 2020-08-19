@@ -1,1 +1,19 @@
-<h1>Hello i'm Paula !</h1>
+<ul>
+<li><%= current_user.first_name %></li>
+<li><%= current_user.last_name %></li>
+<li><%= current_user.email %></li>
+</ul>
+<ul>
+<% @children.each do |child| %>
+ <li><%= child.first_name %></li>
+ <li><%= child.birth_date %></li>
+ <li><%= child.weight %></li>
+ <li>Cardiac <%= child.cardiac %></li>
+ <li>Respiratory <%= child.respiratory %></li>
+ <li>Prematurity <%= child.prematurity %></li>
+ <li> <%= link_to "🖍", edit_child_path(child) %></li>
+ <li> <%= link_to "🗑", child, method: :delete, data: { confirm: "Are you sure ?" } %></li>
+<% end %>
+</ul>
+
+<%= link_to "Create a child", new_child_path %>

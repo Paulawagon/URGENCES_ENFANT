@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Analyse.destroy_all
+Analysis.destroy_all
 Child.destroy_all
 User.destroy_all
 Disease.destroy_all
@@ -17,7 +17,7 @@ e1 = Child.new(first_name: "Lola", birth_date: Date.new(2019, 11, 10), weight: 5
 e1.user = u1
 e1.save!
 
-a1 = Analyse.new(symptoms: ["toux"])
+a1 = Analysis.new(symptoms: ["toux"])
 a1.child = e1
 a1.save!
 
