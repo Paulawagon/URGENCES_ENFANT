@@ -1,7 +1,6 @@
-<h2><%= @disease.name %></h2>
-<p><%= @disease.symptoms %></p>
-<p><%= @disease.behavior %></p>
-<p><%= @disease.when_consult %></p>
-<p><%= @disease.need_know %></p>
-<p><%= @disease.prevention %></p>
-
+<ul>
+  <li><%= link_to "Conduite à tenir", behavior_path(@disease) %></li>
+  <li><%= link_to "Quand consulter ?", need_know_path(@disease) %></li>
+  <li><%= link_to "Ce qu'il faut savoir", consult_path(@disease) %></li>
+  <li><%= link_to "Prévention", prevention_path(@disease) %></li>
+</ul>
