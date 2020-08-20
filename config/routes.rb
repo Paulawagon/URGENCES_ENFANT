@@ -16,4 +16,6 @@ Rails.application.routes.draw do
   get "/diseases/:id/when_consult", to: "diseases#consult", as: :consult
   get "/diseases/:id/prevention", to: "diseases#prevention", as: :prevention
   get "/direction", to: "hospitals#direction"
+
+  get "create_urgence", to: "pages#create_urgence"
 end
