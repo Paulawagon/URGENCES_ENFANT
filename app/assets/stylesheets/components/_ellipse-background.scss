@@ -1,0 +1,36 @@
+.ellipse-background {
+    background-color: #66BBEC;
+    width: 100%;
+    height: 300px;
+    border-radius: 90% / 50%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transform: rotate(180deg);
+        display:flex;
+    justify-content:center;
+    align-items:flex-start;
+
+}
+
+.image-home {
+    width: 150px;
+    height: 150px;
+    transform: rotate(180deg);
+
+
+}
+
+.ellipse-background-return {
+    background-color: #66BBEC;
+    width: 100%;
+    height: 300px;
+    border-radius: 90% / 50%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    bottom: 0px;
+}
+
+.btn-home{
+    display: flex;
+    justify-content: center;
+}
