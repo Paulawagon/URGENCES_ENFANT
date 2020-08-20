@@ -2,6 +2,11 @@
 	background-color: #ABE0FF;
 	display: flex;
 	justify-content: space-around;
+	width: 100%;
+	position:fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 99;
 }
 
 .icon_name{
@@ -10,6 +15,7 @@
 	align-content: flex-end;
 	flex-direction: column;
 	align-content: stretch;
+	padding: 15px;
 }
 
 .fas{
