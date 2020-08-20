@@ -17,5 +17,6 @@ Rails.application.routes.draw do
   get "/diseases/:id/prevention", to: "diseases#prevention", as: :prevention
   get "/direction", to: "hospitals#direction"
 
-  get "create_urgence", to: "pages#create_urgence"
+  get "new_urgence", to: "pages#new_urgence"
+  post "create_urgence", to: "pages#create_urgence"
 end

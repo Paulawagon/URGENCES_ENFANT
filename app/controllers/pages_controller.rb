@@ -9,7 +9,7 @@ class PagesController < ApplicationController
     @children = current_user.children
   end
 
-  def new
+  def new_urgence
     @child = Child.new
   end
 
