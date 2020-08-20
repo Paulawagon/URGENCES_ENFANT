@@ -1,6 +1,21 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
+<%= link_to "Diag non urgent", diseases_path %>
+<%= link_to "show", disease_path(Disease.last) %>
 
-
-
-<%= link_to "index diseases", diseases_path %>
+<footer>
+	<div id="navbar-contenair">
+		<div class="icon_name">
+		<i class="fas fa-home"></i>
+		<%= link_to "Home", root_path, class: "link-footer" %>
+		</div>
+		<div class="icon_name">
+		<i class="far fa-user-circle"></i>
+		<%= link_to "Profil", profil_path, class: "link-footer" %>
+		</div>
+		<div class="icon_name">
+		<i class="fas fa-book-open"></i>
+		<%= link_to "Préventions", diseases_path, class: "link-footer" %>
+		</div>
+	</div>
+</footer>

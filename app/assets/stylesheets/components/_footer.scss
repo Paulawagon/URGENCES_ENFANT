@@ -1,0 +1,30 @@
+#navbar-contenair {
+	background-color: #ABE0FF;
+	display: flex;
+	justify-content: space-around;
+}
+
+.icon_name{
+	display: flex;
+	align-items: center;
+	align-content: flex-end;
+	flex-direction: column;
+	align-content: stretch;
+}
+
+.fas{
+	color:white;
+}
+
+.far{
+	color:white;
+}
+
+.link-footer{
+	color:white;
+	text-decoration: none !important;
+}
+
+.link-footer:hover{
+	color:white;
+}
