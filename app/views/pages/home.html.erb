@@ -3,13 +3,9 @@
 	<%= image_tag "background.png", class: "image-home" %>
 </div>
 
-<%= link_to "Urgence Enfants !", new_urgence_path %>
-
-<%= link_to "show", disease_path(Disease.first) %>
+<%= link_to "Urgence Enfants !", new_urgence_path, class: "btn-home-1" %>
 
 <div class="ellipse-background-return">
-	<div class="btn-home">
-	<%= link_to "Connection", profil_path %>
-	</div>
+	<%= link_to "Connection", profil_path, class: "btn-home" %>
 </div>
 
