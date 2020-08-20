@@ -5,10 +5,20 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require "csv"
+
+Hospital.destroy_all
 Analysis.destroy_all
 Child.destroy_all
 User.destroy_all
 Disease.destroy_all
+
+CSV.foreach(Rails.root.join("db/hospitals.csv")) do |row|
+  puts "creating #{row[0]}"
+  Hospital.create(name: row[0], address: row[1])
+end
+
+puts "#{Hospital.count} hospitals created"
 
 u1 = User.new(first_name: "Paula", last_name: "Pisa", email: "paula@test.fr", password: "123456")
 u1.save!
@@ -20,7 +30,6 @@ e1.save!
 a1 = Analysis.new(symptoms: ["toux"])
 a1.child = e1
 a1.save!
-
 
 d1 = Disease.new(name: "Fièvre", symptoms: ["fièvre"], behavior: " Découvrez votre enfant (vêtements légers dans une pièce aérée non surchaufée -18-20°.\n
 Donnez lui à boire +++.\n
@@ -37,7 +46,7 @@ La température se mesure avec un thermomètre (au mieux en rectal). La notion �
 
 d1.save!
 
-d2 = Disease.new(name: "Toux", symptoms: ["toux"], behavior:" Les médicaments contre la toux ne servent à rien et ne sont pas conseillés. Nettoyer le nez au moins 6 fois par jour avec du sérum physiologique, en particulier avant de lui donner à boire ou à manger.\n
+d2 = Disease.new(name: "Toux", symptoms: ["toux"], behavior: " Les médicaments contre la toux ne servent à rien et ne sont pas conseillés. Nettoyer le nez au moins 6 fois par jour avec du sérum physiologique, en particulier avant de lui donner à boire ou à manger.\n
 Lui donner régulièrement de l’eau à boire pour éviter la déshydratation.\n
 Fractionner  ses repas (lui donner à manger plus souvent et en plus petites quantités).\n
 Bien aérer toutes les pièces du logement ( particulièrement la pièce où il dort).\n
@@ -63,7 +72,7 @@ Lorsque l’on est soi-même enrhumé se couvrir la bouche lorsque l’on tousse
 
 d2.save!
 
-d3 = Disease.new(name: "Rhume", symptoms: ["toux"], behavior:" Nettoyer le nez au moins 6 fois par jour avec du sérum physiologique, en particulier avant de lui donner à boire ou à manger.\n
+d3 = Disease.new(name: "Rhume", symptoms: ["toux"], behavior: " Nettoyer le nez au moins 6 fois par jour avec du sérum physiologique, en particulier avant de lui donner à boire ou à manger.\n
 Lui donner régulièrement de l’eau à boire pour éviter la déshydratation.\n
 Fractionner  ses repas (lui donner à manger plus souvent et en plus petites quantités).\n
 Bien aérer toutes les pièces du logement ( particulièrement la pièce où il dort).\n
