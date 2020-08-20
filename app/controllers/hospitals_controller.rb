@@ -8,7 +8,8 @@ class HospitalsController < ApplicationController
     @markers = @hospitals.map do |hospital|
       {
         lat: hospital.latitude,
-        lng: hospital.longitude
+        lng: hospital.longitude,
+        infoWindow: render_to_string(partial: "info_window", locals: { hospital: hospital }),
       }
     end
   end
