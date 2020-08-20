@@ -18,8 +18,6 @@ CSV.foreach(Rails.root.join("db/hospitals.csv")) do |row|
   Hospital.create(name: row[0], address: row[1])
 end
 
-puts "#{Hospital.count} hospitals created"
-
 u1 = User.new(first_name: "Paula", last_name: "Pisa", email: "paula@test.fr", password: "123456")
 u1.save!
 
