@@ -1,12 +1,15 @@
-<h1>Fiches Prévention</h1>
-<ul>
-<li><%= link_to "Diarrhée", prevention_path(@disease) %></li>
-<li><%= link_to "Fièvre", prevention_path(@disease) %></li>
-<li><%= link_to "Bronchiolite", prevention_path(@disease) %></li>
-<li><%= link_to "Gastro-Entérite", prevention_path(@disease) %></li>
-<li><%= link_to "Brûlures", prevention_path(@disease) %></li>
-</ul>
-
+<div class="card-title">
+	<h1 class="d-flex justify-content-center">Fiches Prévention</h1>
+</div>
+<div class="prev-container px-4 py-3">
+	<div class="card-diseases d-flex justify-content-center">
+		<ul>
+			<% @diseases.each do |disease| %>
+			<li><%= link_to disease.name, prevention_path(disease), class: "list-diseases" %></li>
+			<% end %>		
+		</ul>
+	</div>	
+</div>
 
 
 <footer>
