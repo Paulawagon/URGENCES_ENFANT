@@ -1,5 +1,33 @@
-<h1>Symptoms</h1>
+<div class="titre-checkbox">
+<h2>Symptomes</h2>
+</div>
+<!-- <form class="form"> -->
+  <div class="inputGroup">
 <%= simple_form_for([@child, @analysis]) do |f| %>
 			<%= f.input :symptoms, collection: @symptoms, as: :check_boxes, label_on: :left %>
-			<%= f.submit "Analyse", class: "btn btn-outline-secondary btn-lg mb-2" %>
+			 </div>
+             <%= f.submit "Analyse", class: "btn-analyse-home" %>
+
+<!-- </form> -->
+			
 <% end %>
+
+
+
+
+<footer>
+  <div id="navbar-contenair">
+    <div class="icon_name">
+    <i class="fas fa-home"></i>
+    <%= link_to "Home", root_path, class: "link-footer" %>
+    </div>
+    <div class="icon_name">
+    <i class="far fa-user-circle"></i>
+    <%= link_to "Profil", profil_path, class: "link-footer" %>
+    </div>
+    <div class="icon_name">
+    <i class="fas fa-book-open"></i>
+    <%= link_to "Préventions", diseases_path, class: "link-footer" %>
+    </div>
+  </div>
+</footer>
