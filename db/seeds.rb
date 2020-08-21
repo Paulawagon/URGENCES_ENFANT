@@ -143,17 +143,17 @@ Si votre bébé prend du lait en poudre, arrêtez le lait et donnez-lui à boire
 Evitez toute autre composition artisanale (eau de riz, soupe de carottes, cola éventé…)\n
 Notez les quantités de biberons bues. Comptabilisez les selles et les vomissements. Mesurez sa température. Pesez votre enfant ( en pharmacie par exemple).
  ", when_consult: "Consultez votre médecin traitant si votre enfant a:\n
-•	Les yeux cernés, creusés
-•	Un teint pâle ou grisâtre
-•	Une respiration rapide
-•	Une somnolence
-•	Des geignements, des pleurs
-•	Une sécheresse des muqueuses (bouche et langue) et cutanée (peau plissée).
-•	Perte de poids importante
-•	S’il continue à vomir malgré la solution que vous lui avez proposée en fractionnée", need_know: "La SRO est disponible en pharmacie sans ordonnance.", prevention: " La gastro-entérite est une infection le plus souvent virale.\n
+Les yeux cernés, creusés
+Un teint pâle ou grisâtre
+Une respiration rapide
+Une somnolence
+Des geignements, des pleurs
+Une sécheresse des muqueuses (bouche et langue) et cutanée (peau plissée).
+Perte de poids importante
+S’il continue à vomir malgré la solution que vous lui avez proposée en fractionnée", need_know: "La SRO est disponible en pharmacie sans ordonnance.", prevention: " La gastro-entérite est une infection le plus souvent virale.\n
 Afin de diminuer le risque de contamination :
-•	Lavage systématique des mains après chaque change, avant chaque préparation alimentaire, après chaque contact de manière générale avec un enfant malade.
-•	Lavage des surfaces et du matériel en contact avec l’enfant malade (table à langer, sucettes, biberons.. ")
+Lavage systématique des mains après chaque change, avant chaque préparation alimentaire, après chaque contact de manière générale avec un enfant malade.
+Lavage des surfaces et du matériel en contact avec l’enfant malade (table à langer, sucettes, biberons.. ")
 
 d6.save!
 
