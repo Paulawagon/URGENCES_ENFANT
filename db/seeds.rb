@@ -29,7 +29,7 @@ a1 = Analysis.new(symptoms: ["toux"])
 a1.child = e1
 a1.save!
 
-d1 = Disease.new(name: "Fièvre", symptoms: ["fièvre"], behavior: " Découvrez votre enfant et ne surchauffez pas la pièce (entre 18 et 20°C maximum).\n
+d1 = Disease.new(name: "Fièvre", symptoms: ["Fièvre"], behavior: " Découvrez votre enfant et ne surchauffez pas la pièce (entre 18 et 20°C maximum).\n
 Donnez lui fréquemment à boire +++.\n
 Ces mesures simples sont suffisantes dans bien des cas !\n
 Les bains tièdes et les enveloppements de linges humides ne sont plus recommandés.\n
@@ -49,7 +49,7 @@ Lorsque l’on est soi-même enrhumé se couvrir la bouche lorsque l’on tousse
 
 d1.save!
 
-d2 = Disease.new(name: "Toux", symptoms: ["toux"], behavior: " Les médicaments contre la toux ne servent à rien et ne sont pas conseillés car ils peuvent avoir des effets secondaires dangereux. Ne donnez jamais de miel à un enfant de moins de 1 an (risque de botulisme). \n
+d2 = Disease.new(name: "Toux", symptoms: ["Toux"], behavior: " Les médicaments contre la toux ne servent à rien et ne sont pas conseillés car ils peuvent avoir des effets secondaires dangereux. Ne donnez jamais de miel à un enfant de moins de 1 an (risque de botulisme). \n
 Même s'il ne vous paraît pas enrhumé, nettoyer lui le nez au moins 6 fois par jour avec du sérum physiologique, en particulier avant de lui donner à boire ou à manger.\n
 Lui donner régulièrement de l’eau à boire pour éviter la déshydratation.\n
 Fractionnez  ses repas (lui donner à manger plus souvent et en plus petites quantités).\n
@@ -76,7 +76,7 @@ Lorsque l’on est soi-même enrhumé se couvrir la bouche lorsque l’on tousse
 
 d2.save!
 
-d3 = Disease.new(name: "Rhume", symptoms: ["rhume"], behavior: " Nettoyer le nez au moins 6 fois par jour avec du sérum physiologique, en particulier avant de lui donner à boire ou à manger.\n
+d3 = Disease.new(name: "Rhume", symptoms: ["Rhume"], behavior: " Nettoyer le nez au moins 6 fois par jour avec du sérum physiologique, en particulier avant de lui donner à boire ou à manger.\n
 Lui donner régulièrement de l’eau à boire pour éviter la déshydratation.\n
 Fractionner  ses repas (lui donner à manger plus souvent et en plus petites quantités).\n
 Bien aérer toutes les pièces du logement ( particulièrement la pièce où il dort).\n
@@ -100,7 +100,7 @@ Lorsque l’on est soi-même enrhumé se couvrir la bouche lorsque l’on tousse
 
 d3.save!
 
-d4 = Disease.new(name: "Diarrhées", symptoms: ["diarrhées"], behavior: " Le principal danger de la diarrhée c’est la déshydratation, c’est-à-dire un manque d’eau dans le corps. Le meilleur moyen d’éviter ou de traiter un déshydratation est de donner à boire à votre enfant une Solution de réhydratation orale (SRO).\n
+d4 = Disease.new(name: "Diarrhées", symptoms: ["Diarrhées"], behavior: " Le principal danger de la diarrhée c’est la déshydratation, c’est-à-dire un manque d’eau dans le corps. Le meilleur moyen d’éviter ou de traiter un déshydratation est de donner à boire à votre enfant une Solution de réhydratation orale (SRO).\n
 Donnez souvent la SRO à boire à votre enfant, au début plusieurs fois par heure.\n
 Si votre enfant vomit, donnez-lui la solution bien fraîche, au début toutes les 5 à 10 minutes, par petites gorgées ou même à la cuillère.\n
 Ensuite, laissez votre enfant boire la SRO à volonté, selon sa soif, le temps que dure la diarrhée.\n
@@ -111,7 +111,7 @@ Si votre enfant vomit, que les selles ne diminuent pas, qu’il refuse de boire 
 
 d4.save!
 
-d5 = Disease.new(name: "Vomissements", symptoms: ["vomissement"], behavior: " Le principal danger des vomissements c’est la déshydratation, c’est-à-dire un manque d’eau dans le corps. Le meilleur moyen d’éviter ou de traiter une déshydratation est de donner à boire à votre enfant une Solution de réhydratation orale (SRO).\n
+d5 = Disease.new(name: "Vomissements", symptoms: ["Vomissement"], behavior: " Le principal danger des vomissements c’est la déshydratation, c’est-à-dire un manque d’eau dans le corps. Le meilleur moyen d’éviter ou de traiter une déshydratation est de donner à boire à votre enfant une Solution de réhydratation orale (SRO).\n
 Donnez souvent la SRO à boire à votre enfant, au début plusieurs fois par heure.\n
 Si votre enfant vomit, donnez-lui la solution bien fraîche, au début toutes les 5 à 10 minutes, par petites gorgées ou même à la cuillère.\n
 Ensuite, laissez votre enfant boire la SRO à volonté, selon sa soif, le temps que dure les vomissements.\n
@@ -134,7 +134,7 @@ Afin de diminuer le risque de contamination :
 
 d5.save!
 
-d6 = Disease.new(name: "Douleurs abdominales", symptoms: ["douleurs abdominales"], behavior: " Le principal danger des vomissements c’est la déshydratation, c’est-à-dire un manque d’eau dans le corps. Le meilleur moyen d’éviter ou de traiter une déshydratation est de donner à boire à votre enfant une Solution de réhydratation orale (SRO).\n
+d6 = Disease.new(name: "Douleurs abdominales", symptoms: ["Douleurs abdominales"], behavior: " Le principal danger des vomissements c’est la déshydratation, c’est-à-dire un manque d’eau dans le corps. Le meilleur moyen d’éviter ou de traiter une déshydratation est de donner à boire à votre enfant une Solution de réhydratation orale (SRO).\n
 Donnez souvent la SRO à boire à votre enfant, au début plusieurs fois par heure.\n
 Si votre enfant vomit, donnez-lui la solution bien fraîche, au début toutes les 5 à 10 minutes, par petites gorgées ou même à la cuillère.\n
 Ensuite, laissez votre enfant boire la SRO à volonté, selon sa soif, le temps que dure les vomissements.\n
@@ -157,5 +157,5 @@ Afin de diminuer le risque de contamination :
 
 d6.save!
 
-d7 = Disease.new(name: "Brulures", symptoms: ["brulures"], behavior: " Refroidissement 10 min sous l'eau froide", when_consult: "Plaie dont la taille est supérieure à 10 cm", need_know: "Ne pas appliquer de dentifrice", prevention: "Afin d'éviter les brulures liées au soleil appliquer un écran total")
+d7 = Disease.new(name: "Brulures", symptoms: ["Brulûres"], behavior: " Refroidissement 10 min sous l'eau froide", when_consult: "Plaie dont la taille est supérieure à 10 cm", need_know: "Ne pas appliquer de dentifrice", prevention: "Afin d'éviter les brulures liées au soleil appliquer un écran total")
 d7.save!
