@@ -157,5 +157,5 @@ Lavage des surfaces et du matériel en contact avec l’enfant malade (table à 
 
 d6.save!
 
-d7 = Disease.new(name: "Brulures", symptoms: ["Brulûres"], behavior: " Refroidissement 10 min sous l'eau froide", when_consult: "Plaie dont la taille est supérieure à 10 cm", need_know: "Ne pas appliquer de dentifrice", prevention: "Afin d'éviter les brulures liées au soleil appliquer un écran total")
+d7 = Disease.new(name: "Brulures", symptoms: ["Brûlures"], behavior: " Refroidissement 10 min sous l'eau froide", when_consult: "Plaie dont la taille est supérieure à 10 cm", need_know: "Ne pas appliquer de dentifrice", prevention: "Afin d'éviter les brulures liées au soleil appliquer un écran total")
 d7.save!
