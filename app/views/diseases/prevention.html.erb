@@ -1,2 +1,21 @@
-<h1>Prévention</h1>
-<p><%= @disease.prevention %></p>
+<%= link_to "Précédent", disease_path, class: "btn btn-outline-primary-precedent" %>
+<div class="container-card">
+	<h1>Prévention</h1>
+	<p><%= @disease.prevention %></p>
+</div>
+<footer>
+	<div id="navbar-contenair">
+		<div class="icon_name">
+		<i class="fas fa-home"></i>
+		<%= link_to "Home", root_path, class: "link-footer" %>
+		</div>
+		<div class="icon_name">
+		<i class="far fa-user-circle"></i>
+		<%= link_to "Profil", profil_path, class: "link-footer" %>
+		</div>
+		<div class="icon_name">
+		<i class="fas fa-book-open"></i>
+		<%= link_to "Préventions", diseases_path, class: "link-footer" %>
+		</div>
+	</div>
+</footer>

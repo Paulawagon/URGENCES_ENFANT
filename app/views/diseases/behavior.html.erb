@@ -1,2 +1,19 @@
+<%= link_to "Précédent", disease_path, class: "btn btn-outline-primary-precedent" %>
 <h1>Conduite à tenir</h1>
 <p><%= @disease.behavior %></p>
+<footer>
+	<div id="navbar-contenair">
+		<div class="icon_name">
+		<i class="fas fa-home"></i>
+		<%= link_to "Home", root_path, class: "link-footer" %>
+		</div>
+		<div class="icon_name">
+		<i class="far fa-user-circle"></i>
+		<%= link_to "Profil", profil_path, class: "link-footer" %>
+		</div>
+		<div class="icon_name">
+		<i class="fas fa-book-open"></i>
+		<%= link_to "Préventions", diseases_path, class: "link-footer" %>
+		</div>
+	</div>
+</footer>
