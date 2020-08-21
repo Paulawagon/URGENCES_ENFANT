@@ -1,7 +1,7 @@
 <%= link_to "Précédent", disease_path, class: "btn btn-outline-primary-precedent" %>
 <div class="container-card">
 	<h1>Prévention</h1>
-	<p><%= @disease.prevention %></p>
+	<p><%= raw @disease.prevention %></p>
 </div>
 <footer>
 	<div id="navbar-contenair">
