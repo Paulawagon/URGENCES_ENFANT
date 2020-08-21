@@ -11,7 +11,7 @@ class AnalysesController < ApplicationController
   def create
     @analysis = Analysis.new
 
-    symptoms= params[:analysis][:symptoms]
+    symptoms = params[:analysis][:symptoms]
     symptoms.delete_at(0)
 
     @child = Child.find(params[:child_id])
@@ -26,7 +26,6 @@ class AnalysesController < ApplicationController
           disease.symptoms.include? symptom
         end
       end
-
       redirect_to disease_path(all_possible_diseases.first)
     end
   end
