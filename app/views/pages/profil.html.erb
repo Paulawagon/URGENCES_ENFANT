@@ -12,14 +12,20 @@
 <div class="container-children">
     <ul class="ul-profil-2">
     <% @children.each do |child| %>
+    <div class="container-profil">
     <li><%= child.first_name %></li>
     <li><%= child.birth_date %></li>
     <li><%= child.weight %></li>
     <li>Cardiac <%= child.cardiac %></li>
     <li>Respiratory <%= child.respiratory %></li>
     <li>Prematurity <%= child.prematurity %></li>
+    <div class="edit">
     <li> <%= link_to "🖍", edit_child_path(child) %></li>
+    </div>
+    <div class="trash">
     <li> <%= link_to "🗑", child, method: :delete, data: { confirm: "Are you sure ?" } %></li>
+    </div>
+        </div>
     <% end %>
     </ul>
 
