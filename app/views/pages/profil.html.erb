@@ -1,20 +1,41 @@
-<ul>
-<li><%= current_user.first_name %></li>
-<li><%= current_user.last_name %></li>
-<li><%= current_user.email %></li>
-</ul>
-<ul>
-<% @children.each do |child| %>
- <li><%= child.first_name %></li>
- <li><%= child.birth_date %></li>
- <li><%= child.weight %></li>
- <li>Cardiac <%= child.cardiac %></li>
- <li>Respiratory <%= child.respiratory %></li>
- <li>Prematurity <%= child.prematurity %></li>
- <li> <%= link_to "🖍", edit_child_path(child) %></li>
- <li> <%= link_to "🗑", child, method: :delete, data: { confirm: "Are you sure ?" } %></li>
- <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
-<% end %>
-</ul>
+<div class="container-user">
+    <ul>
+    <li><%= current_user.first_name %></li>
+    <li><%= current_user.last_name %></li>
+    <li><%= current_user.email %></li>
+    </ul>
+</div>
+<div class="container-children">
+    <ul>
+    <% @children.each do |child| %>
+    <li><%= child.first_name %></li>
+    <li><%= child.birth_date %></li>
+    <li><%= child.weight %></li>
+    <li>Cardiac <%= child.cardiac %></li>
+    <li>Respiratory <%= child.respiratory %></li>
+    <li>Prematurity <%= child.prematurity %></li>
+    <li> <%= link_to "🖍", edit_child_path(child) %></li>
+    <li> <%= link_to "🗑", child, method: :delete, data: { confirm: "Are you sure ?" } %></li>
+    <li><%= link_to "Déconnexion", destroy_user_session_path, method: :delete %></li>
+    <% end %>
+    </ul>
+</div>
 
-<%= link_to "Create a child", new_child_path %>
+    <footer>
+        <div id="navbar-contenair">
+            <div class="icon_name">
+            <i class="fas fa-home"></i>
+            <%= link_to "Home", root_path, class: "link-footer" %>
+            </div>
+            <div class="icon_name">
+            <i class="far fa-user-circle"></i>
+            <%= link_to "Profil", profil_path, class: "link-footer" %>
+            </div>
+            <div class="icon_name">
+            <i class="fas fa-book-open"></i>
+            <%= link_to "Préventions", diseases_path, class: "link-footer" %>
+            </div>
+        </div>
+    </footer>
+
+<%= link_to "Ajoutez votre enfant", new_child_path %>
