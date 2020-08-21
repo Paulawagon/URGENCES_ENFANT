@@ -1,6 +1,22 @@
 <ul>
   <li><%= link_to "Conduite à tenir", behavior_path(@disease), class: "btn btn-outline-primary1" %></li>
-  <li><%= link_to "Quand consulter ?", need_know_path(@disease), class: "btn btn-outline-primary2" %></li>
-  <li><%= link_to "Ce qu'il faut savoir", consult_path(@disease), class: "btn btn-outline-primary3" %></li>
+  <li><%= link_to "Quand consulter ?", consult_path(@disease), class: "btn btn-outline-primary2" %></li>
+  <li><%= link_to "Ce qu'il faut savoir", need_know_path(@disease), class: "btn btn-outline-primary3" %></li>
   <li><%= link_to "Prévention", prevention_path(@disease), class: "btn btn-outline-primary4" %></li>
 </ul>
+<footer>
+	<div id="navbar-contenair">
+		<div class="icon_name">
+		<i class="fas fa-home"></i>
+		<%= link_to "Home", root_path, class: "link-footer" %>
+		</div>
+		<div class="icon_name">
+		<i class="far fa-user-circle"></i>
+		<%= link_to "Profil", profil_path, class: "link-footer" %>
+		</div>
+		<div class="icon_name">
+		<i class="fas fa-book-open"></i>
+		<%= link_to "Préventions", diseases_path, class: "link-footer" %>
+		</div>
+	</div>
+</footer>

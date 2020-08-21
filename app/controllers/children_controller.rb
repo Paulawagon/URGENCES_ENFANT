@@ -9,11 +9,9 @@ class ChildrenController < ApplicationController
     @child = Child.new(child_params)
     @child.user = current_user if user_signed_in?
     @child.save
-    if user_signed_in?
-      redirect_to profil_path
-    else
-      redirect_to root_path
-    end
+   
+      redirect_to new_child_analysis_path(@child)
+     
   end
 
 
