@@ -5,7 +5,7 @@ class AnalysesController < ApplicationController
   def new
     @analysis = Analysis.new
     @child = Child.find(params[:child_id])
-    @symptoms = ["fièvre", "toux", "Rhume", "Diarrhées", "Vomissements", "Douleurs abdominales", "Brûlures"]
+    @symptoms = ["Fièvre", "Toux", "Rhume", "Diarrhées", "Vomissements", "Douleurs abdominales", "Brûlures"]
   end
 
   def create
