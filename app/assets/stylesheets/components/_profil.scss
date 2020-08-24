@@ -5,6 +5,7 @@
     justify-content: space-around;
     margin-right: 200px;
     margin-bottom: 10px;
+    width: 23vw;
 }
 
 .user-mail {
@@ -15,7 +16,9 @@
     border-bottom: 1px solid #66BBEC;
 }
 
-.container-children {}
+.container-children {
+    width: 95%
+}
 
 .ul-profil-2 {
     padding: 10px !important;
@@ -75,9 +78,10 @@
     text-align: center;
 }
 
-.link-cards:hover{
-  color: black;
+.link-cards:hover {
+    color: black;
 }
-.link-cards{
-  color: black;
+
+.link-cards {
+    color: black;
 }
