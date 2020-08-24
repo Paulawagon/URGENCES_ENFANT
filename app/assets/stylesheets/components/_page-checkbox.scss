@@ -10,6 +10,11 @@
     justify-content: center;
 }
 
+.form-check-panel{
+    display:flex;
+    justify-content:space-between;
+}
+
 .inputGroup {
     background-color: #fff;
     display: block;
@@ -130,4 +135,9 @@ code {
     border-radius: 25px;
     margin-left: 100px;
 
+}
+
+.btn-analyse-home:hover{
+    text-decoration: none;
+    color: white;
 }

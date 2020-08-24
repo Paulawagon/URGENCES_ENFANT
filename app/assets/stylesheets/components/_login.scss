@@ -41,6 +41,11 @@
     margin:25px;
 }
 
+.btn-link-login:hover{
+    color:black;
+    text-decoration: none;
+}
+
 .btn-connexion{
 	display: flex;
     justify-content: center;
@@ -51,4 +56,9 @@
     background-color: #EBEFEA;
     color:black;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn-connexion:hover{
+    text-decoration: none;
+    color:black;
 }
