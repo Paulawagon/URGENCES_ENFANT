@@ -1,11 +1,12 @@
 // Specific CSS for your home-page
 
-body{
+body {
 	display: flex;
-	// align-items: center;
+	align-items: center;
 	flex-direction:column;
 	font-family: 'Montserrat', sans-serif !important;
 	background-color: white;
+	width: 100vw;
 }
 
 ul {

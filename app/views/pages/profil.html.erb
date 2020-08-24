@@ -1,51 +1,53 @@
 <div class="container-user">
     <ul class="ul-profil">
         <div class="user-name">
-    <li><%= current_user.first_name %></li>
-    <li><%= current_user.last_name %></li>
-    </div>
-    <div class="user-mail">
-    <li><%= current_user.email %></li>
-    </div>
+            <li><%= current_user.first_name %></li>
+            <li><%= current_user.last_name %></li>
+        </div>
+        <div class="user-mail">
+            <li><%= current_user.email %></li>
+        </div>
     </ul>
 </div>
 <div class="container-children">
-    <ul class="ul-profil-2">
     <% @children.each do |child| %>
-    <div class="container-profil">
-    <li><%= child.first_name %></li>
-    <li><%= child.birth_date %></li>
-    <li><%= child.weight %></li>
-    <li>Cardiac <%= child.cardiac %></li>
-    <li>Respiratory <%= child.respiratory %></li>
-    <li>Prematurity <%= child.prematurity %></li>
-    <div class="edit">
-    <li> <%= link_to "🖍", edit_child_path(child) %></li>
-    </div>
-    <div class="trash">
-    <li> <%= link_to "🗑", child, method: :delete, data: { confirm: "Are you sure ?" } %></li>
-    </div>
-        </div>
+        <%= link_to new_child_analysis_path(child), class: "link-cards" do %>
+            <ul class="ul-profil-2">
+                <div class="container-profil">
+                    <li><%= child.first_name %></li>
+                    <li><%= child.birth_date %></li>
+                    <li><%= child.weight %>(kg)</li>
+                    <li>Cardiac <%= child.cardiac %></li>
+                    <li>Respiratory <%= child.respiratory %></li>
+                    <li>Prematurity <%= child.prematurity %></li>
+                    <div class="edit">
+                        <li><%= link_to "🖍", edit_child_path(child)%></li>
+                    </div>
+                    <div class="trash">
+                        <li><%= link_to "🗑", child, method: :delete, data: { confirm: "Are you sure ?" } %></li>
+                    </div>
+                </div>
+            </ul>
+        <% end %>
     <% end %>
-    </ul>
-
 </div>
-  <%= link_to "Déconnexion", destroy_user_session_path, method: :delete %>
-<%= link_to "Ajoutez votre enfant", new_child_path %>
-
-    <footer>
-        <div id="navbar-contenair">
-            <div class="icon_name">
+<div id="deco-ajout">
+    <%= link_to "Déconnexion", destroy_user_session_path, method: :delete, class: "btn-deconnexion" %>
+    <%= link_to "Ajoutez votre enfant", new_child_path, class: "btn-ajout-enfant" %>
+</div>
+<footer>
+    <div id="navbar-contenair">
+        <div class="icon_name">
             <i class="fas fa-home"></i>
             <%= link_to "Home", root_path, class: "link-footer" %>
-            </div>
-            <div class="icon_name">
+        </div>
+        <div class="icon_name">
             <i class="far fa-user-circle"></i>
             <%= link_to "Profil", profil_path, class: "link-footer" %>
-            </div>
-            <div class="icon_name">
-            <i class="fas fa-book-open"></i>
-            <%= link_to "Préventions", diseases_path, class: "link-footer" %>
-            </div>
         </div>
-    </footer>
+        <div class="icon_name">
+            <i class="fas fa-book-open"></i>
+            <%= link_to "Index", diseases_path, class: "link-footer" %>
+        </div>
+    </div>
+</footer>

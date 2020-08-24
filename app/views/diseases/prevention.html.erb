@@ -1,7 +1,7 @@
 
 <div class="container">
 	<div class=" d-flex justify-content-end">
-		<%= link_to "Précédent", disease_path, class: "btn btn-outline-primary-precedent" %>
+		<%= link_to "Précédent", :back, class: "btn btn-outline-primary-precedent" %>
 	</div>
   <div class="container-card px-4 py-3 ">
     <h1 class="d-flex justify-content-center">Prévention</h1>
@@ -19,7 +19,7 @@
       </div>
       <div class="icon_name">
       <i class="fas fa-book-open"></i>
-      <%= link_to "Préventions", diseases_path, class: "link-footer" %>
+      <%= link_to "Index", diseases_path, class: "link-footer" %>
       </div>
     </div>
   </footer>
