@@ -1,8 +1,13 @@
 .btn-outline-primary-precedent {
-background-color: #66BBEC;
-border-radius: 10px;
-color: white;
-width: 129px;
-height: 37px;
-margin-bottom: 10px;
+    background-color: #66BBEC;
+    border-radius: 10px;
+    color: white;
+    width: 129px;
+    height: 37px;
+    margin-bottom: 10px;
+}
+
+.btn-outline-primary-precedent:hover {
+    text-decoration: none;
+    color: white;
 }

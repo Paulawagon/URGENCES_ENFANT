@@ -1,18 +1,20 @@
-#map{
-	margin: 10px;
+#map {
+    margin: 10px;
 }
-.mapboxgl-popup {
-	max-width: 200px;
-  }
-  
-  .mapboxgl-popup-content {
-	text-align: center;
-	font-family: 'Montserrat', sans-serif !important;
-  }
 
-  h6 {
-	  text-align: center;
-  }
-  h4 {
-	text-align: center;
+.mapboxgl-popup {
+    max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+h6 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
 }

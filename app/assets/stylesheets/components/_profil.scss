@@ -5,6 +5,7 @@
     justify-content: space-around;
     margin-right: 200px;
     margin-bottom: 10px;
+    width: 23vw;
 }
 
 .user-mail {
@@ -15,7 +16,9 @@
     border-bottom: 1px solid #66BBEC;
 }
 
-.container-children {}
+.container-children {
+    width: 95%
+}
 
 .ul-profil-2 {
     padding: 10px !important;
@@ -65,6 +68,11 @@
     text-align: center;
 }
 
+.btn-deconnexion:hover {
+    color: black;
+    text-decoration: none;
+}
+
 .btn-ajout-enfant {
     margin: 35px;
     width: 210px;
@@ -73,11 +81,19 @@
     color: black;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
     text-align: center;
+    text-decoration: none;
 }
 
-.link-cards:hover{
-  color: black;
+.btn-ajout-enfant:hover {
+    color: black;
+    text-decoration: none;
 }
-.link-cards{
-  color: black;
+
+.link-cards {
+    color: black;
+}
+
+.link-cards:hover {
+    color: black;
+    text-decoration: none;
 }
