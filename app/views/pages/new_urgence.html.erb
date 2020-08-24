@@ -1,16 +1,40 @@
 
-<%= simple_form_for(@child) do |f| %>
-			<%= f.input :first_name,
-               input_html: { autocomplete: "First date", class: "input-line full-width" } %>
-			<%= f.input :birth_date,
-               input_html: { autocomplete: "Birth date", class: "input-line full-width" } %>
-               <%= f.input :weight,
-                           input_html: { autocomplete: "Weight", class: "input-line full-width" } %>
-			<%= f.input :cardiac,
-               input_html: { autocomplete: "Cardiac", class: "input-line full-width" } %>
-			<%= f.input :respiratory,
-               input_html: { autocomplete: "Respiratory", class: "input-line full-width" } %>
-            <%= f.input :prematurity,
-                        input_html: { autocomplete: "Prematurity", class: "input-line full-width" } %>
-			<%= f.submit "Analyse", class: "btn btn-outline-secondary btn-lg mb-2" %>
-<% end %>
+<div class="container_simple_form">
+	<%= simple_form_for(@child) do |f| %>
+								<%= f.input :first_name,
+                    label: "Prénom",
+                    input_html: { autocomplete: "First date", class: "input-line full-width" } %>
+								<%= f.input :birth_date,
+                    label: "Date de naissance",
+                    input_html: { autocomplete: "Birth date", class: "input-line full-width" } %>
+								<%= f.input :weight,
+                    label: "Poids (Kg)",
+                    input_html: { autocomplete: "Weight", class: "input-line full-width" } %>
+			<div class="d-flex flex-wrap justify-content-center pt-4" label="Antécédent(s)">
+        <div class="clickable">
+					<i>
+							<small><%= f.input :cardiac,
+                          label: "Cardiaque",
+                          input_html: { autocomplete: "Cardiac", class: "input-line full-width" } %></small>
+					</i>
+				</div>
+				<div class="clickable">
+					<i>
+							<small><%= f.input :respiratory,
+                          label: "Respiratoire",
+                          input_html: { autocomplete: "Respiratory", class: "input-line full-width" } %></small>
+					</i>
+				</div>
+				<div class="clickable">
+					<i>
+							<small><%= f.input :prematurity,
+                          label: "Prématuré",
+                          input_html: { autocomplete: "Prematurity", class: "input-line full-width" } %></small>
+					</i>
+				</div>
+			</div>	
+				<%= f.submit "Suivant", class: "btn-next-child" %>
+	<% end %>
+</div>
+
+<script src="main.js"></script>
