@@ -1,32 +1,32 @@
 .card-title {
-	text-align: justify;
+    text-align: justify;
     background-color: white;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-	border-radius: 5px;
-	margin: 20px;
-	min-width: 300px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin: 20px;
+    min-width: 300px;
 }
 
 .card-diseases {
     text-align: justify;
     background-color: white;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-	border-radius: 5px;
-	height: 70vh;
-	border-color: #DCDCDC;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    height: 70vh;
+    border-color: #DCDCDC;
 }
 
 .list-diseases {
-	background-color: #FE7988;
-	color: white;
-	display: inline-block;
-	transform: skewX(-15deg);
-	margin:15px;
-	min-width: 300px;
-	text-align: center; 
+    background-color: #FE7988;
+    color: white;
+    display: inline-block;
+    transform: skewX(-15deg);
+    margin: 15px;
+    min-width: 300px;
+    text-align: center;
 }
 
-.list-diseases:hover{
-	text-decoration: none;
-	color:white;
+.list-diseases:hover {
+    text-decoration: none;
+    color: white;
 }

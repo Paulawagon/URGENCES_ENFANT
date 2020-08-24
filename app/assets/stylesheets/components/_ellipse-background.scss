@@ -1,13 +1,13 @@
 .ellipse-background {
     background-color: #66BBEC;
-	width: 100%;
-	height: 30vh;
+    width: 100%;
+    height: 30vh;
     border-radius: 90% / 30%;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     transform: rotate(180deg);
     display: flex;
-	position: static;
+    position: static;
     justify-content: center;
     align-items: center;
 }
@@ -17,22 +17,22 @@
     transform: rotate(180deg);
     margin-right: 15px;
     display: flex;
-	position: absolute;
+    position: absolute;
 }
 
 .ellipse-background-return {
     background-color: #66BBEC;
-	width: 100%;
+    width: 100%;
     height: 30vh;
     border-radius: 90% / 30%;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     bottom: 0;
-    padding:30px;
+    padding: 30px;
 
 }
 
@@ -42,23 +42,23 @@
     align-items: center;
     position: absolute;
     bottom: 0;
-    padding:30px;
-    margin:20px;
+    padding: 30px;
+    margin: 20px;
     width: 290px;
-    height:47px;
+    height: 47px;
     border-radius: 25px;
     background-color: white;
-    color:#FE7988;
+    color: #FE7988;
 }
 
-.btn-home:hover{
+.btn-home:hover {
     text-decoration: none;
-    color:#FE7988;
+    color: #FE7988;
 }
 
 .btn-home-1 {
-    padding:30px;
-    margin:20px;
+    padding: 30px;
+    margin: 20px;
     border: 1px solid #FE7988;
     background-color: #FE7988;
     color: white;
@@ -66,20 +66,20 @@
     border-radius: 25px;
 }
 
-.btn-home-1:hover{
+.btn-home-1:hover {
     text-decoration: none;
     color: white;
 }
 
-.btn-placement{
-	padding: 33px;
-	height: 40vh;
-	margin: 5px;
-	display: flex;
-	justify-content: center;
+.btn-placement {
+    padding: 33px;
+    height: 40vh;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.btn-placement:hover{
+.btn-placement:hover {
     text-decoration: none;
 }

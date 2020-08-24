@@ -9,7 +9,7 @@ class HospitalsController < ApplicationController
       {
         lat: hospital.latitude,
         lng: hospital.longitude,
-        infoWindow: render_to_string(partial: "info_window", locals: { hospital: hospital }),
+        infoWindow: render_to_string(partial: "info_window", locals: { hospital: hospital })
       }
     end
   end
