@@ -9,12 +9,9 @@ class ChildrenController < ApplicationController
     @child = Child.new(child_params)
     @child.user = current_user if user_signed_in?
     @child.save
-   
-      redirect_to new_child_analysis_path(@child)
-     
+
+    redirect_to new_child_analysis_path(@child)
   end
-
-
 
   def update
     @child = Child.find(params[:id])
