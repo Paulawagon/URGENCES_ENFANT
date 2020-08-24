@@ -14,8 +14,8 @@ User.destroy_all
 Disease.destroy_all
 
 CSV.foreach(Rails.root.join("db/hospitals.csv")) do |row|
-  puts "creating #{row[0]}"
-  Hospital.create(name: row[0], address: row[1])
+ puts "creating #{row[0]}"
+Hospital.create(name: row[0], address: row[1])
 end
 
 u1 = User.new(first_name: "Paula", last_name: "Pisa", email: "paula@test.fr", password: "123456")
@@ -29,25 +29,61 @@ a1 = Analysis.new(symptoms: ["toux"])
 a1.child = e1
 a1.save!
 
-d1 = Disease.new(name: "Fièvre", symptoms: ["Fièvre"], behavior: " Découvrez votre enfant et ne surchauffez pas la pièce (entre 18 et 20°C maximum).\n
-Donnez lui fréquemment à boire +++.\n
-Ces mesures simples sont suffisantes dans bien des cas !\n
-Les bains tièdes et les enveloppements de linges humides ne sont plus recommandés.\n
-Les médicaments : Avant l’avis de votre médecin traitant, ne donnez qu’un seul médicament antipyrétique (=contre la fièvre) à la fois : le paracétamol (Nom commercial : doliprane, efferalgan, dolko, dafalgan) toutes les 6 heures si besoin. Attention de ne pas associer plusieurs médicaments contenant les mêmes molécules (ou des molécules de la même famille) ex :doliprane et efferalgan", when_consult: "Consultez aux Urgences si vous n'arrivez pas à réveiller votre enfant, s’il a une éruption cutanée, une difficulté respiratoire, une coloration bleue des lèvres ou des extrêmités, des tremblements ou des convulsions.\n
-En cas de convulsions (perte de contact, modification du tonus, mouvements anormaux des yeux ou des membres) GARDEZ votre calme, allongez votre enfant sur le côté afin de dégager ses voies respiratoires, éloignez le de tout objet susceptible de le blesser.\n
-N'essayez pas de lui ouvrir la bouche. Si possible notez la durée des convulsions, elles s'arrêtent généralement d'elles-mêmes en quelques minutes. Si ce n'est pas le cas et que votre enfant ne se reveille pas complètement au delà de 10 minutes après le début des convulsions appeler le 15.\n
-Si votre enfant ne présente pas de signes inquiètants, vous pouvez consulter au bout de 48 heures votre médecin traitant ou les urgences en cas d'impossibilité .\n", need_know: " La température se mesure avec un thermomètre (au mieux en rectal). La notion ‘il est chaud’ ne veut rien dire. On considère qu’un enfant a de la fièvre quand sa température dépasse 38°C. Généralement, ce n’est qu’au-dessus de 38,5°C que l’on envisage un traitement. \n
-Il n’est pas nécessaire de traiter systématiquement la fièvre surtout si elle est bien supportée par l’enfant. Le but du traitement n’est pas de normaliser à tout prix la température, mais d’améliorer le confort de l’enfant. \n
-L’ampleur de la fièvre n’est pas corrélée à la gravité de la maladie, le comportement de l’enfant est plus révélateur (en effet, on peut observer une forte fièvre chez un enfant atteint d’une infection bénigne et ne relever aucune élévation de température chez un enfant souffrant d’une très grave infection. \n
-La fièvre fait partie d’un processus complexe de défense de l’organisme, c’est une réponse aux infections).\n
-Seuls certains enfants (souvent avec un caractère familial) ont une susceptibilité particulière et peuvent convulser, même en cas de fièvre peu élevée). Ces convulsions sont généralement sans gravité, même si elles sont très impressionnantes !\n
-", prevention: "La fièvre est une réaction de défense face à un microbe, pour s'en protéger et éviter la contamination: lavez vous régulièrement les mains avec du savon ou une solution hydroalcoolique.\n
-Evitez, quand cela est possible, d’emmener votre enfant malade ou ayant moins de 3 mois dans les endroits publics confinés (transports en commun, centres commerciaux, etc.).\n
-Ne pas partager les biberons, sucettes ou couverts.\n
-Ouvrez les fenêtres de la pièce où il dort au moins 10 minutes par jour pour aérer.\n
-Lorsque l’on est soi-même enrhumé se couvrir la bouche lorsque l’on tousse avec son coude ou sa manche. Portez un masque lorsque l’on s’occupe de son bébé. Evitez d’embrasser son enfant sur le visage et sur les mains. ")
+d1 = Disease.new(name: "Fièvre", symptoms: ["Fièvre"], behavior: "<p>
+     Découvrez votre enfant et ne surchauffez pas la pièce (entre 18 et 20°C
+    maximum).
+<div>
+    <p>Donnez-lui fréquemment à boire <span class = 'rose' style='background-color:#FE7988 ; color: white' ; border: 1px solid #FE7988; font-weight: bolder;
+    border-radius: 25px; > +++</span> .
+    </p>
+</dv>
+    <p>Ces mesures simples sont suffisantes dans bien des cas !</p>
+    <p>Les bains tièdes et les enveloppements de linges humides ne sont plus
+    recommandés.</p>
+    <p>Il n’est pas nécessaire de traiter systématiquement la fièvre surtout si
+    elle est bien supportée par l’enfant. Le but du traitement n’est pas de
+    normaliser à tout prix la température, mais d’améliorer le confort de
+    l’enfant.</p>
+    <p><strong><span class = 'medoc' style='background-color: #66BBEC; color: white'>Les médicaments: </span></strong>
+    avant l’avis de votre médecin, ne donnez qu’un seul médicament contre la
+    fièvre à la fois : le paracétamol (par exemple : Doliprane®, Efferalgan®, Dolko®, Dafalgan®) toutes les 6 heures si besoin.</p>
+    <p><span class= 'warning' style='background-color: #FE7988; color: white'>Attention</span> de ne pas associer plusieurs médicaments contenant les mêmes
+    molécules (ou des molécules de la même famille) comme du Doliprane® et de
+    l’Efferalgan®</p><br><br><br><br>", 
+when_consult: "<strong><span class = 'rose' style='background-color:#FE7988 ; color: white' ; border: 1px solid #FE7988; font-weight: bolder;
+    border-radius: 25px; >Consultez aux Urgences: </span></strong>
+<div list-style-type:none; margin-left: 2px;>
+ <li>Si vous n'arrivez pas à réveiller votre enfant</li> 
+ <li>S’il a une éruption cutanée </li> 
+ <li>Une difficulté respiratoire</li> 
+ <li>Une coloration bleue des lèvres ou des extrêmités</li> 
+ <li>Des tremblements ou des convulsions</li> 
+<li>En cas de convulsions (perte de contact, modification du tonus, mouvements anormaux des yeux ou des membres):
+<span class= 'warning' style='color: #FE7988';><strong>GARDEZ votre calme:</strong></span><br>
+<strong> "    "- </strong>Allongez votre enfant sur le côté afin de dégager ses voies respiratoires<br>
+<strong>  - </strong>Eloignez le de tout objet susceptible de le blesser<br>
+<strong>  - </strong>N'essayez pas de lui ouvrir la bouche<br>
+<strong>  - </strong>Si possible notez la durée des convulsions, elles s'arrêtent généralement d'elles-mêmes en quelques minutes<br>
+<strong>  - </strong>Si ce n'est pas le cas et que votre enfant ne se reveille pas complètement au delà de 10 minutes après le début des convulsions appeler le 15<br>
+</div><br>
+<span class = 'medoc' style='background-color: #66BBEC; color: white;'>***</span>Si votre enfant ne présente pas de signes inquiètants, vous pouvez consulter au bout de 48 heures votre médecin traitant ou les urgences en cas d'impossibilité .<br><br><br><br>",
+need_know: " La température se mesure avec un thermomètre (au mieux en rectal). <br><br>
+La notion ‘il est chaud’ ne veut rien dire. On considère qu’un enfant a de la fièvre quand sa température dépasse <span class = 'rose' style='background-color:#FE7988 ; color: white' ; border: 1px solid #FE7988; font-weight: bolder;border-radius: 25px;>38°C</span>.
+Généralement, ce n’est qu’au-dessus de <span class = 'rose' style='background-color:#FE7988 ; color: white' ; border: 1px solid #FE7988; font-weight: bolder;
+border-radius: 25px; >38,5°C</span> que l’on envisage un traitement.<br><br>
+Il n’est pas nécessaire de traiter systématiquement la fièvre surtout si elle est bien supportée par l’enfant. Le but du traitement n’est pas de normaliser à tout prix la température, mais d’améliorer le confort de l’enfant. <br><br>
+L’ampleur de la fièvre n’est pas corrélée à la gravité de la maladie, le comportement de l’enfant est plus révélateur (en effet, on peut observer une forte fièvre chez un enfant atteint d’une infection bénigne et ne relever aucune élévation de température chez un enfant souffrant d’une très grave infection.<br><br>
+La fièvre fait partie d’un processus complexe de défense de l’organisme, c’est une réponse aux infections).<br><br>
+Seuls certains enfants (souvent avec un caractère familial) ont une susceptibilité particulière et peuvent convulser, même en cas de fièvre peu élevée).<br><br>
+<span class = 'medoc' style='background-color: #66BBEC; color: white;'><strong>Ces convulsions sont généralement sans gravité, même si elles sont très impressionnantes !</strong></span><br><br><br><br>
+", prevention: "<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span> La fièvre est une réaction de défense face à un microbe, pour s'en protéger et éviter la contamination: lavez vous régulièrement les mains avec du savon ou une solution hydroalcoolique.<br><br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span> Evitez, quand cela est possible, d’emmener votre enfant malade ou ayant moins de 3 mois dans les endroits publics confinés (transports en commun, centres commerciaux, etc.).<br><br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span> Ne pas partager les biberons, sucettes ou couverts.<br><br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span> Ouvrez les fenêtres de la pièce où il dort au moins 10 minutes par jour pour aérer.<br><br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span> Lorsque l’on est soi-même enrhumé se couvrir la bouche lorsque l’on tousse avec son coude ou sa manche. Portez un masque lorsque l’on s’occupe de son bébé. Evitez d’embrasser son enfant sur le visage et sur les mains. <br><br><br><br>")
 
 d1.save!
+
 
 d2 = Disease.new(name: "Toux", symptoms: ["Toux"], behavior: " Les médicaments contre la toux ne servent à rien et ne sont pas conseillés car ils peuvent avoir des effets secondaires dangereux. Ne donnez jamais de miel à un enfant de moins de 1 an (risque de botulisme). \n
 Même s'il ne vous paraît pas enrhumé, nettoyer lui le nez au moins 6 fois par jour avec du sérum physiologique, en particulier avant de lui donner à boire ou à manger.\n
@@ -159,3 +195,4 @@ d6.save!
 
 d7 = Disease.new(name: "Brulures", symptoms: ["Brûlures"], behavior: " Refroidissement 10 min sous l'eau froide", when_consult: "Plaie dont la taille est supérieure à 10 cm", need_know: "Ne pas appliquer de dentifrice", prevention: "Afin d'éviter les brulures liées au soleil appliquer un écran total")
 d7.save!
+ 
