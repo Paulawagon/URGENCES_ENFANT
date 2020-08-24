@@ -68,6 +68,11 @@
     text-align: center;
 }
 
+.btn-deconnexion:hover{
+    color: black;
+    text-decoration: none;
+}
+
 .btn-ajout-enfant {
     margin: 35px;
     width: 210px;
@@ -76,12 +81,19 @@
     color: black;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
     text-align: center;
+    text-decoration: none;
 }
 
-.link-cards:hover {
+.btn-ajout-enfant:hover {
     color: black;
+    text-decoration: none;
 }
 
 .link-cards {
     color: black;
+}
+
+.link-cards:hover {
+    color: black;
+    text-decoration: none;
 }

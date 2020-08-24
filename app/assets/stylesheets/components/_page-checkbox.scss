@@ -10,6 +10,7 @@
     justify-content: center;
 }
 
+
 .inputGroup {
     background-color: #fff;
     display: block;
@@ -18,7 +19,7 @@
 
     label {
         padding: 12px 30px;
-        width: 100%;
+        width: 100vw;
         display: block;
         text-align: left;
         color: #3C454C;
@@ -128,6 +129,11 @@ code {
     color: white;
     font-weight: bolder;
     border-radius: 25px;
-    margin-left: 100px;
+    margin-top: 50px;
 
+}
+
+.btn-analyse-home:hover{
+    text-decoration: none;
+    color: white;
 }

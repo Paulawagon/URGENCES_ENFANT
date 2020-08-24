@@ -6,7 +6,9 @@
 <%= simple_form_for([@child, @analysis]) do |f| %>
 			<%= f.input :symptoms, collection: @symptoms, as: :check_boxes, label_on: :left %>
 			 </div>
+       <div class="centrage-btn">
              <%= f.submit "Analyse", class: "btn-analyse-home" %>
+             </div>
 
 <!-- </form> -->
 			
