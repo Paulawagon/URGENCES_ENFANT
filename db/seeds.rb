@@ -13,10 +13,10 @@ Child.destroy_all
 User.destroy_all
 Disease.destroy_all
 
-# CSV.foreach(Rails.root.join("db/hospitals.csv")) do |row|
-# puts "creating #{row[0]}"
-# Hospital.create(name: row[0], address: row[1])
-#  end
+CSV.foreach(Rails.root.join("db/hospitals.csv")) do |row|
+puts "creating #{row[0]}"
+Hospital.create(name: row[0], address: row[1])
+ end
 
 u1 = User.new(first_name: "Paula", last_name: "Pisa", email: "paula@test.fr", password: "123456")
 u1.save!
@@ -151,12 +151,14 @@ Lorsque l’on est soi-même enrhumé se couvrir la bouche lorsque l’on tousse
 
 d3.save!
 
-d4 = Disease.new(name: "Diarrhées", symptoms: ["Diarrhées"], behavior: " Le principal danger de la diarrhée c’est la déshydratation, c’est-à-dire un manque d’eau dans le corps. Le meilleur moyen d’éviter ou de traiter un déshydratation est de donner à boire à votre enfant une Solution de réhydratation orale (SRO).<br>
+d4 = Disease.new(name: "Diarrhées", symptoms: ["Diarrhées"], behavior: " Le principal danger de la diarrhée c’est la déshydratation, c’est-à-dire un manque d’eau dans le corps.<br>
+Le meilleur moyen d’éviter ou de traiter un déshydratation est de donner à boire à votre enfant une Solution de réhydratation orale (SRO).<br>
 Donnez souvent la SRO à boire à votre enfant, au début plusieurs fois par heure.<br>
 Si votre enfant vomit, donnez-lui la solution bien fraîche, au début toutes les 5 à 10 minutes, par petites gorgées ou même à la cuillère.<br>
 Ensuite, laissez votre enfant boire la SRO à volonté, selon sa soif, le temps que dure la diarrhée.<br>
 Si vous allaitez, poursuivez comme d’habitude et proposez de la SRO à votre enfant entre les têtées.<br>
-Si votre bébé prend du lait en poudre, arrêtez le lait et donnez-lui à boire de la SRO à la place. Après douze heures de SRO seule, proposez-lui à nouveau le lait habituel avec de la SRO entre les biberons.
+<span class = 'rose' style='color:#FE7988 ; '>Si votre bébé prend du lait en poudre, arrêtez le lait et donnez-lui à boire de la SRO à la place.</span><br>
+Après douze heures de SRO seule, proposez-lui à nouveau le lait habituel avec de la SRO entre les biberons.<br><br><br><br>
 ", when_consult: "Si votre petit enfant a la diarrhée, que vous n’avez pas de SRO avec vous et vous ne pouvez pas vous en procurer rapidement, appeler rapidement votre médecin ou le 15.<br>
 Si votre enfant vomit, que les selles ne diminuent pas, qu’il refuse de boire et de manger, s’il a une température supérieure à 38,5°C, s’il est très fatigué, qu’il a les yeux cernés, creusés, s’il n’est pas comme d’habitude, ou s’il a du sang dans les selles rappelez rapidement votre médecin ou consultez les services d’urgences", need_know: "La SRO est disponible en pharmacie sans ordonnance.", prevention: "Généralement viral")
 
