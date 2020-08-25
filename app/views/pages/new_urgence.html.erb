@@ -11,31 +11,20 @@
 								<%= f.input :weight,
                     label: "Poids (Kg)",
                     input_html: { autocomplete: "Weight", class: "input-line full-width" } %>
-			<div class="d-flex flex-wrap justify-content-center pt-4" label="Antécédent(s)">
-        <div class="clickable">
-					<i></i>
-							<small><%= f.input :cardiac, :style => "display: none;",
-                                    label: "Cardiaque",
-                                    input_html: { autocomplete: "Cardiac", class: "input-line full-width hidden" } %></small>
-
-				</div>
-				<div class="clickable">
-					<i></i>
-							<small><%= f.input :respiratory,
-                          label: "Respiratoire",
-                          input_html: { autocomplete: "Respiratory", class: "input-line full-width hidden" } %></small>
+						  <div class="inputGroup">
+								<%= f.input :cardiac,
+                    label: "Cardiaque",
+                    input_html: { autocomplete: "Cardiac", class: "input-line full-width hidden" } %>
+								<%= f.input :respiratory,
+                    label: "Respiratoire",
+                    input_html: { autocomplete: "Respiratory", class: "input-line full-width hidden" } %>
 					
-				</div>
-				<div class="clickable">
-					<i></i>
-							<small><%= f.input :prematurity,
-                          label: "Prématuré",
-                          input_html: { autocomplete: "Prematurity", class: "input-line full-width hidden" } %></small>
-					
-				</div>
-			</div>	
-				<%= f.submit "Suivant", class: "btn-next-child" %>
-	<% end %>
+								<%= f.input :prematurity,
+                    label: "Prématuré",
+                    input_html: { autocomplete: "Prematurity", class: "input-line full-width hidden" } %>
+		 						</div>
 </div>
+						<%= f.submit "Suivant", class: "btn-next-child" %>
+	<% end %>
 
 <script src="main.js"></script>

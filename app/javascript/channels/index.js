@@ -4,6 +4,3 @@
 const channels = require.context('.', true, /_channel\.js$/)
 channels.keys().forEach(channels)
 
-const toggleActiveClass = (event) => {
-    event.currentTarget.classList.toggle('active');
-  };
