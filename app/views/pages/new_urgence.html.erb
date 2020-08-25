@@ -1,4 +1,5 @@
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 <div class="container_simple_form">
 	<%= simple_form_for(@child) do |f| %>
 							
@@ -8,31 +9,20 @@
 								<%= f.input :weight,
                     label: "Poids (Kg)",
                     input_html: { autocomplete: "Weight", class: "input-line full-width" } %>
-			<div class="d-flex flex-wrap justify-content-center pt-4" label="Antécédent(s)">
-        <div class="clickable">
-					<i>
-							<small><%= f.input :cardiac,
-                          label: "Cardiaque",
-                          input_html: { autocomplete: "Cardiac", class: "input-line full-width" } %></small>
-					</i>
-				</div>
-				<div class="clickable">
-					<i>
-							<small><%= f.input :respiratory,
-                          label: "Respiratoire",
-                          input_html: { autocomplete: "Respiratory", class: "input-line full-width" } %></small>
-					</i>
-				</div>
-				<div class="clickable">
-					<i>
-							<small><%= f.input :prematurity,
-                          label: "Prématuré",
-                          input_html: { autocomplete: "Prematurity", class: "input-line full-width" } %></small>
-					</i>
-				</div>
-			</div>	
-				<%= f.submit "Suivant", class: "btn-next-child" %>
-	<% end %>
+						  <div class="inputGroup">
+								<%= f.input :cardiac,
+                    label: "Cardiaque",
+                    input_html: { autocomplete: "Cardiac", class: "input-line full-width hidden" } %>
+								<%= f.input :respiratory,
+                    label: "Respiratoire",
+                    input_html: { autocomplete: "Respiratory", class: "input-line full-width hidden" } %>
+					
+								<%= f.input :prematurity,
+                    label: "Prématuré",
+                    input_html: { autocomplete: "Prematurity", class: "input-line full-width hidden" } %>
+		 						</div>
 </div>
+						<%= f.submit "Suivant", class: "btn-next-child" %>
+	<% end %>
 
 <script src="main.js"></script>
