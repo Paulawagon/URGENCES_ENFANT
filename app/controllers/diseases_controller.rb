@@ -4,6 +4,7 @@ class DiseasesController < ApplicationController
   end
 
   def show
+    @symptoms = Analysis.last.symptoms
     @disease = Disease.find(params[:id])
   end
 
