@@ -1,23 +1,25 @@
 .container_simple_form {
-    margin-top: 20%;
-    display: flex;
+
+    margin: 20% auto 0px;
     justify-content: center;
     text-align: center;
     width: 90%;
-    padding: 33px;
+    padding: 20px;
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
     border-radius: 20px;
-    
 }
 
 .btn-next-child {
-width: 145px;
-height: 50px;
-border: 1px solid #FE7988;;
-background-color: #FE7988;;
-color: white;
-font-weight: bolder;
-border-radius: 20px;
-margin: 8px;
+	width: 145px;
+	height: 50px;
+	border: 1px solid #FE7988;;
+	background-color: #FE7988;;
+	color: white;
+	font-weight: bolder;
+	border-radius: 20px;
+	margin-left: 30%;
+	margin-top: 10px;
 }
+
+
 
