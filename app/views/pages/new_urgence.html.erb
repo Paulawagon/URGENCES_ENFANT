@@ -13,23 +13,23 @@
 			<div class="d-flex flex-wrap justify-content-center pt-4" label="Antécédent(s)">
         <div class="clickable">
 					<i>
-							<small><%= f.input :cardiac,
-                          label: "Cardiaque",
-                          input_html: { autocomplete: "Cardiac", class: "input-line full-width" } %></small>
+							<small><%= f.input :cardiac, :style => "display: none;",
+                                    label: "Cardiaque",
+                                    input_html: { autocomplete: "Cardiac", class: "input-line full-width hidden" } %></small>
 					</i>
 				</div>
 				<div class="clickable">
 					<i>
 							<small><%= f.input :respiratory,
                           label: "Respiratoire",
-                          input_html: { autocomplete: "Respiratory", class: "input-line full-width" } %></small>
+                          input_html: { autocomplete: "Respiratory", class: "input-line full-width hidden" } %></small>
 					</i>
 				</div>
 				<div class="clickable">
 					<i>
 							<small><%= f.input :prematurity,
                           label: "Prématuré",
-                          input_html: { autocomplete: "Prematurity", class: "input-line full-width" } %></small>
+                          input_html: { autocomplete: "Prematurity", class: "input-line full-width hidden" } %></small>
 					</i>
 				</div>
 			</div>	
