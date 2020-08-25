@@ -1,21 +1,15 @@
-<div class="titre-checkbox">
-<h2>Symptomes</h2>
-</div>
+<h2 class="titre-checkbox">Symptomes</h2>
+
 <!-- <form class="form"> -->
-<%= simple_form_for([@child, @analysis]) do |f| %>
-  <div class="container_new_analysis">
-   <div class="inputGroup" id="id_width">
-			<%= f.input :symptoms, collection: @symptoms, as: :check_boxes, label_on: :left %>
-	  </div>
-  </div>
-       <div class="centrage-btn">
-             <%= f.submit "Analyse", class: "btn-analyse-home" %>
-        </div>
-<!-- </form> -->		
-<% end %>
-
-
-
+<div class="container">
+  <%= simple_form_for([@child, @analysis]) do |f| %>
+    <div class=" container_new_analysis inputGroup">
+        <%= f.input :symptoms, collection: @symptoms, as: :check_boxes, label_on: :left %>
+      </div>
+      <%= f.submit "Analyse", class: "btn-analyse-home centrage-btn" %>
+  <!-- </form> -->		
+  <% end %>
+</div>
 
 <footer>
   <div id="navbar-contenair">
