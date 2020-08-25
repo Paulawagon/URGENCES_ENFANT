@@ -2,17 +2,16 @@
 <h2>Symptomes</h2>
 </div>
 <!-- <form class="form"> -->
-<div class="container_new_analysis">
-  <div class="inputGroup" id="id_width">
-    <%= simple_form_for([@child, @analysis]) do |f| %>
+<%= simple_form_for([@child, @analysis]) do |f| %>
+  <div class="container_new_analysis">
+   <div class="inputGroup" id="id_width">
 			<%= f.input :symptoms, collection: @symptoms, as: :check_boxes, label_on: :left %>
-	</div>
-</div>
+	  </div>
+  </div>
        <div class="centrage-btn">
              <%= f.submit "Analyse", class: "btn-analyse-home" %>
         </div>
-<!-- </form> -->
-			
+<!-- </form> -->		
 <% end %>
 
 
