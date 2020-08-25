@@ -5,7 +5,7 @@
 <div class="prev-container px-4 py-3">
 	<div class="card-diseases d-flex justify-content-center">
 		<div class="test">
-		<ul>
+		<ul class="ul-inde">
 			<% @diseases.each do |disease| %>
 			<li><%= link_to disease.name, disease_path(disease), class: "list-diseases" %></li>
 			<% end %>		

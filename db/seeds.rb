@@ -13,10 +13,10 @@ Child.destroy_all
 User.destroy_all
 Disease.destroy_all
 
-CSV.foreach(Rails.root.join("db/hospitals.csv")) do |row|
-puts "creating #{row[0]}"
-Hospital.create(name: row[0], address: row[1])
- end
+# CSV.foreach(Rails.root.join("db/hospitals.csv")) do |row|
+# puts "creating #{row[0]}"
+# Hospital.create(name: row[0], address: row[1])
+#  end
 
 u1 = User.new(first_name: "Paula", last_name: "Pisa", email: "paula@test.fr", password: "123456")
 u1.save!
@@ -213,3 +213,5 @@ d6.save!
 d7 = Disease.new(name: "Brûlures", symptoms: ["Brûlures"], behavior: "Si votre enfant se brûle, ne paniquez pas. Refroidisser la brûlure à l’eau froide (15°C environ) pendant 15 min", when_consult: "Plaie dont la taille est supérieure à 10 cm", need_know: "Ne pas appliquer de dentifrice", prevention: "Afin d'éviter les brulures liées au soleil appliquer un écran total")
 d7.save!
  
+# d7 = Disease.new(name: "Toux et Rhume", symptoms: ["Toux","Rhume"], behavior: "Rhume toux", when_consult: "Rhume toux", need_know: "rhume toux", prevention: "rhume")
+# d7.save!

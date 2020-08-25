@@ -1,3 +1,10 @@
+
+<h2 class="mt-3"><%= @disease.name %></h2>
+<%# <% if multiple_symptoms %>
+<div class="chiante">
+<h5>En cas de symptômes associés veuillez vous référer à l'Index"</h5>
+</div>
+<%# <%= end %> 
 <ul>
   <li><%= link_to "Conduite à tenir", behavior_path(@disease), class: "btn btn-outline-primary1" %></li>
   <li><%= link_to "Quand consulter ?", consult_path(@disease), class: "btn btn-outline-primary2" %></li>
