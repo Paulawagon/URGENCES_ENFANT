@@ -13,10 +13,10 @@ Child.destroy_all
 User.destroy_all
 Disease.destroy_all
 
-CSV.foreach(Rails.root.join("db/hospitals.csv")) do |row|
-puts "creating #{row[0]}"
-Hospital.create(name: row[0], address: row[1])
- end
+# CSV.foreach(Rails.root.join("db/hospitals.csv")) do |row|
+# puts "creating #{row[0]}"
+# Hospital.create(name: row[0], address: row[1])
+#  end
 
 u1 = User.new(first_name: "Paula", last_name: "Pisa", email: "paula@test.fr", password: "123456")
 u1.save!
@@ -69,7 +69,7 @@ when_consult: "<strong><span class = 'rose' style='background-color:#FE7988 ; co
 </div><br>
 <span class = 'medoc' style='background-color: #66BBEC; color: white; border: 1px solid #66BBEC; font-weight: bolder; border-radius: 25px; '> *** </span>
 Si votre enfant ne présente pas de signes inquiètants, vous pouvez consulter au bout de 48 heures votre médecin traitant ou les urgences en cas d'impossibilité .<br><br><br><br>",
-need_know: " La température se mesure avec un thermomètre (au mieux en rectal). <br><br>
+need_know: " La température se mesure avec un thermomètre (au mieux en rectal, si vous prenez la température en axillaire ajoutez 0,5°C). <br><br>
 La notion ‘il est chaud’ ne veut rien dire. On considère qu’un enfant a de la fièvre quand sa température dépasse 
 <span class = 'rose' style='background-color:#FE7988 ; color: white ; border: 1px solid #FE7988; font-weight: bolder;border-radius: 25px; padding: 2px;'>38°C</span>.
 Généralement,  ce n’est qu’au-dessus de <span class = 'rose' style='background-color:#FE7988 ; color: white ; border: 1px solid #FE7988; font-weight: bolder;
@@ -208,6 +208,6 @@ Lavage des surfaces et du matériel en contact avec l’enfant malade (table à 
 
 d6.save!
 
-d7 = Disease.new(name: "Brulures", symptoms: ["Brûlures"], behavior: " Refroidissement 10 min sous l'eau froide", when_consult: "Plaie dont la taille est supérieure à 10 cm", need_know: "Ne pas appliquer de dentifrice", prevention: "Afin d'éviter les brulures liées au soleil appliquer un écran total")
+d7 = Disease.new(name: "Brûlures", symptoms: ["Brûlures"], behavior: "Si votre enfant se brûle, ne paniquez pas. Refroidisser la brûlure à l’eau froide (15°C environ) pendant 15 min", when_consult: "Plaie dont la taille est supérieure à 10 cm", need_know: "Ne pas appliquer de dentifrice", prevention: "Afin d'éviter les brulures liées au soleil appliquer un écran total")
 d7.save!
  
