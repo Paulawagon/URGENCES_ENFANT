@@ -9,6 +9,7 @@
 }
 
 .card-diseases {
+    width: 90%;
     text-align: justify;
     background-color: white;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
@@ -25,10 +26,16 @@
     margin: 15px;
     min-width: 300px;
     text-align: center;
-    color:#95999A;
+    color:white;
 }
 
 .list-diseases:hover {
     text-decoration: none;
-    color:#95999A;
+    color:white;
+}
+
+.prev-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
