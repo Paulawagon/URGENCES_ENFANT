@@ -3,43 +3,31 @@
     border: 1px solid lightgrey;
     border-radius: 25px;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
-    margin: 15px;
-    margin-left: 30px;
     width: 85%;
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-top: 5px;
 }
 
 .container_new_analysis {
-
-    text-align: center;
-    width: 90%;
-    padding: 5px;
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
     border-radius: 20px;
-
-    margin: auto;
-
-}
-
-#id_width {
-    width: 100vw !important;
 }
 
 .inputGroup {
     background-color: #fff;
     display: block;
-    margin: 10px 0;
+    margin-top: 10px;
     position: relative;
-
+    
     label {
+        margin-top: 5%;
+        margin-bottom: 5%;
         padding: 12px 30px;
-        width: 90%;
         display: block;
         text-align: left;
         color: #3C454C;
-        cursor: pointer;
         position: relative;
         z-index: 2;
         transition: color 200ms ease-in;
@@ -75,7 +63,6 @@
             right: 30px;
             top: 50%;
             transform: translateY(-50%);
-            cursor: pointer;
             transition: all 200ms ease-in;
         }
     }
@@ -103,7 +90,6 @@
         right: 30px;
         top: 50%;
         transform: translateY(-50%);
-        cursor: pointer;
         visibility: hidden;
     }
 }
@@ -115,8 +101,6 @@
     font-size: 18px;
     line-height: 36px;
 }
-
-
 
 *,
 *::before,
@@ -133,6 +117,10 @@ code {
     padding: 0 8px;
 }
 
+.form-check {
+    padding-left: 0px;
+}
+
 .col-form-label {
     display: none;
 }
@@ -146,8 +134,8 @@ code {
     font-weight: bolder;
     border-radius: 25px;
     border-radius: 20px;
-    margin-left:25%;
-    margin-top: 10%;
+    margin-left: 23%;
+    margin-top: 3%;
 }
 
 .btn-analyse-home:hover {
