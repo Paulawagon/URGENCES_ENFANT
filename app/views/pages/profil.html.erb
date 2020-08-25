@@ -21,10 +21,10 @@
                     <li>Respiratory <%= child.respiratory %></li>
                     <li>Prematurity <%= child.prematurity %></li>
                     <div class="edit">
-                        <li><%= link_to "🖍", edit_child_path(child)%></li>
+                        <li><%= link_to "🖊", edit_child_path(child)%></li>
                     </div>
                     <div class="trash">
-                        <li><%= link_to "🗑", child, method: :delete, data: { confirm: "Are you sure ?" } %></li>
+                        <li><%= link_to "❌", child, method: :delete, data: { confirm: "Are you sure ?" } %></li>
                     </div>
                 </div>
             </ul>
@@ -32,8 +32,8 @@
     <% end %>
 </div>
 <div id="deco-ajout">
-    <%= link_to "Déconnexion", destroy_user_session_path, method: :delete, class: "btn-deconnexion" %>
     <%= link_to "Ajoutez votre enfant", new_child_path, class: "btn-ajout-enfant" %>
+    <%= link_to "Déconnexion", destroy_user_session_path, method: :delete, class: "btn-deconnexion" %>
 </div>
 <footer>
     <div id="navbar-contenair">
