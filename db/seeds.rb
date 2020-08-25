@@ -135,11 +135,14 @@ Si votre enfant boit moins de la moitié de ses biberons à trois repas consécu
 Il vomit systématiquement.<br>
 Il dort en permanence, ou au contraire, pleure de manière inhabituelle et ne peut s’endormir.<br>
 Sinon consultez votre médecin traitant.",
-need_know: " La bronchiolite peut débuter par un simple rhume et l’enfant tousse un peu. Puis la toux est plus fréquente, la respiration peut devenir sifflante. L’enfant peut être gêné pour respirer et avoir du mal à manger et à dormir. Il peut avoir de la fièvre.<br>
+need_know: " La bronchiolite peut débuter par un simple rhume et l’enfant tousse un peu. <br>
+Puis la toux est plus fréquente, la respiration peut devenir sifflante. L’enfant peut être gêné pour respirer et avoir du mal à manger et à dormir.<br>
+Il peut avoir de la fièvre.<br>
 Dans la majorité des cas, la bronchiolite guérit spontanément au bout de 5 à 10 jour mais peut persister pendant 2 à 4 semaines.La bronchiololite est une maladie respiratoire très fréquentes chez les nourrissons et les enfants de moins de 2 ans. Elle est due le plus souvent à un virus appelé Virus Respiratoire Syndical (VRS) qui touche les petites bronches.\n
 Les épidémies de bronchiolite débutent généralement au cours du mois d’octobre et se terminent courant janvier.", 
 prevention: "La bronchiolite est une maladie très contagieuse.<br>
-Les adultes et les grands enfants qui sont porteurs du virus respiratoire syncytial n’ont habituellement aucun signe ou ont un simple rhume. Le virus se transmet facilement par la salive, la toux, et les éternuements.<br>
+Les adultes et les grands enfants qui sont porteurs du virus respiratoire syncytial n’ont habituellement aucun signe ou ont un simple rhume. <br>
+Le virus se transmet facilement par la salive, la toux, et les éternuements.<br>
 Le virus peut rester sur les mains et les objets (comme sur les jouets, les tétines, les « doudous ».<br>
 Se laver les mains pendant 30 secondes avec de l’eau et du savon avant et après un change, une tétée, câlins, biberon, repas, etc. ou en utilisant une solution hydroalcoolique.<br>
 Evitez, quand cela est possible, d’emmener son enfant dans les endroits publics confinés (transports en commun, centres commerciaux, etc.) où il risquerait d’être en contact avec des personnes enrhumées.<br>
@@ -173,45 +176,58 @@ Si votre bébé prend du lait en poudre, arrêtez le lait et donnez-lui à boire
 Evitez toute autre composition artisanale (eau de riz, soupe de carottes, cola éventé…)<br>
 Notez les quantités de biberons bues. Comptabilisez les selles et les vomissements. Mesurez sa température. Pesez votre enfant ( en pharmacie par exemple).
  ", when_consult: "Consultez votre médecin traitant si votre enfant a:<br>
-•	Les yeux cernés, creusés
-•	Un teint pâle ou grisâtre
-•	Une respiration rapide
-•	Une somnolence
-•	Des geignements, des pleurs
-•	Une sécheresse des muqueuses (bouche et langue) et cutanée (peau plissée).
-•	Perte de poids importante
-•	S’il continue à vomir malgré la solution que vous lui avez proposée en fractionnée", need_know: "La SRO est disponible en pharmacie sans ordonnance.", prevention: " La gastro-entérite est une infection le plus souvent virale.\n
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Les yeux cernés, creusés<br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Un teint pâle ou grisâtre<br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Une respiration rapide<br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Une somnolence<br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Des geignements, des pleurs<br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Une sécheresse des muqueuses (bouche et langue)<br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Une sécheresse cutanée (peau plissée)<br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Perte de poids importante<br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>S’il continue à vomir malgré la solution que vous lui avez proposée en fractionnée", 
+need_know: "La SRO est disponible en pharmacie sans ordonnance.", 
+prevention: " La gastro-entérite est une infection le plus souvent virale.<br>
 Afin de diminuer le risque de contamination :
-•	Lavage systématique des mains après chaque change, avant chaque préparation alimentaire, après chaque contact de manière générale avec un enfant malade.
-•	Lavage des surfaces et du matériel en contact avec l’enfant malade (table à langer, sucettes, biberons.. ")
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Lavage systématique des mains après chaque change, avant chaque préparation alimentaire, après chaque contact de manière générale avec un enfant malade.<br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Lavage des surfaces et du matériel en contact avec l’enfant malade (table à langer, sucettes, biberons.. <br><br><br><br>")
 
 d5.save!
 
-d6 = Disease.new(name: "Douleurs abdominales", symptoms: ["Douleurs abdominales"], behavior: " Le principal danger des vomissements c’est la déshydratation, c’est-à-dire un manque d’eau dans le corps. Le meilleur moyen d’éviter ou de traiter une déshydratation est de donner à boire à votre enfant une Solution de réhydratation orale (SRO).\n
-Donnez souvent la SRO à boire à votre enfant, au début plusieurs fois par heure.\n
-Si votre enfant vomit, donnez-lui la solution bien fraîche, au début toutes les 5 à 10 minutes, par petites gorgées ou même à la cuillère.\n
-Ensuite, laissez votre enfant boire la SRO à volonté, selon sa soif, le temps que dure les vomissements.\n
-Si vous allaitez, poursuivez comme d’habitude et proposez de la SRO à votre enfant entre les têtées.\n
-Si votre bébé prend du lait en poudre, arrêtez le lait et donnez-lui à boire de la SRO à la place. Après douze heures de SRO seule, proposez-lui à nouveau le lait habituel avec de la SRO entre les biberons.\n
-Evitez toute autre composition artisanale (eau de riz, soupe de carottes, cola éventé…)\n
-Notez les quantités de biberons bues. Comptabilisez les selles et les vomissements. Mesurez sa température. Pesez votre enfant ( en pharmacie par exemple).
- ", when_consult: "Consultez votre médecin traitant si votre enfant a:\n
-Les yeux cernés, creusés
-Un teint pâle ou grisâtre
-Une respiration rapide
-Une somnolence
-Des geignements, des pleurs
-Une sécheresse des muqueuses (bouche et langue) et cutanée (peau plissée).
-Perte de poids importante
-S’il continue à vomir malgré la solution que vous lui avez proposée en fractionnée", need_know: "La SRO est disponible en pharmacie sans ordonnance.", prevention: " La gastro-entérite est une infection le plus souvent virale.\n
-Afin de diminuer le risque de contamination :
-Lavage systématique des mains après chaque change, avant chaque préparation alimentaire, après chaque contact de manière générale avec un enfant malade.
-Lavage des surfaces et du matériel en contact avec l’enfant malade (table à langer, sucettes, biberons.. ")
+d6 = Disease.new(name: "Douleurs abdominales", symptoms: ["Douleurs abdominales"],
+ behavior: " Le principal danger des vomissements c’est la déshydratation, c’est-à-dire un manque d’eau dans le corps.<br><br>
+Le meilleur moyen d’éviter ou de traiter une déshydratation est de donner à boire à votre enfant une<span class = 'rose' style='color:#FE7988 ; '><strong> Solution de réhydratation orale (SRO)</strong></span>.<br><br>
+Donnez souvent la SRO à boire à votre enfant, au début plusieurs fois par heure.<br><br>
+Si votre enfant vomit, donnez-lui la solution bien fraîche, au début toutes les 5 à 10 minutes, par petites gorgées ou même à la cuillère.<br><br>
+Ensuite, laissez votre enfant boire la SRO à volonté, selon sa soif, le temps que dure les vomissements.<br><br>
+Si vous allaitez, poursuivez comme d’habitude et proposez de la SRO à votre enfant entre les têtées.<br><br>
+Si votre bébé prend du lait en poudre, arrêtez le lait et donnez-lui à boire de la SRO à la place. Après douze heures de SRO seule, proposez-lui à nouveau le lait habituel avec de la SRO entre les biberons.<br><br>
+Evitez toute autre composition artisanale (eau de riz, soupe de carottes, cola éventé…)<br><br>
+Notez les quantités de biberons bues. Comptabilisez les selles et les vomissements. Mesurez sa température. Pesez votre enfant ( en pharmacie par exemple).<br>
+ <p><strong><span class = 'medoc' style='background-color: #66BBEC; color: white; border: 1px solid #66BBEC; font-weight: bolder; border-radius: 25px;'>Les médicaments: </span></strong>
+    avant l’avis de votre médecin, ne donnez qu’un seul médicament contre la
+    fièvre à la fois : le paracétamol (par exemple : Doliprane®, Efferalgan®, Dolko®, Dafalgan®) toutes les 6 heures si besoin.</p>
+    <p><span class= 'warning' style='background-color: #FE7988; color: white; border: 1px solid #FE7988; font-weight: bolder;
+    border-radius: 25px;'>Attention</span> de ne pas associer plusieurs médicaments contenant les mêmes
+    molécules (ou des molécules de la même famille) comme du Doliprane® et de
+    l’Efferalgan®</p><br><br>
+ ", when_consult: "Consultez votre médecin traitant si votre enfant a:<br><br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Les yeux cernés, creusés<br><br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Un teint pâle ou grisâtre<br><br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Une respiration rapide<br><br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Une somnolence<br><br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Des geignements, des pleurs<br><br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Une sécheresse des muqueuses (bouche et langue) et cutanée (peau plissée)<br><br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Perte de poids importante<br><br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>S’il continue à vomir malgré la solution que vous lui avez proposée en fractionnée<br><br><br><br>",
+need_know: "<br><br>La SRO est disponible en pharmacie sans ordonnance.", 
+prevention: " <brLa gastro-entérite est une infection le plus souvent virale.<br>
+Afin de diminuer le risque de contamination :<br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Lavage systématique des mains après chaque change, avant chaque préparation alimentaire, après chaque contact de manière générale avec un enfant malade<br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Lavage des surfaces et du matériel en contact avec l’enfant malade (table à langer, sucettes, biberons...<br><br><br><br> ")
 
 d6.save!
 
-d7 = Disease.new(name: "Brûlures", symptoms: ["Brûlures"], behavior: "Si votre enfant se brûle, ne paniquez pas. Refroidisser la brûlure à l’eau froide (15°C environ) pendant 15 min", when_consult: "Plaie dont la taille est supérieure à 10 cm", need_know: "Ne pas appliquer de dentifrice", prevention: "Afin d'éviter les brulures liées au soleil appliquer un écran total")
+d7 = Disease.new(name: "Brûlures", symptoms: ["Brûlures"], behavior: "Si votre enfant se brûle, ne paniquez pas. Refroidisser la brûlure à l’eau froide (15°C environ) pendant 15 min",
+ when_consult: "Plaie dont la taille est supérieure à 10 cm", need_know: "Ne pas appliquer de dentifrice", prevention: "Afin d'éviter les brulures liées au soleil appliquer un écran total")
 d7.save!
  
-# d7 = Disease.new(name: "Toux et Rhume", symptoms: ["Toux","Rhume"], behavior: "Rhume toux", when_consult: "Rhume toux", need_know: "rhume toux", prevention: "rhume")
-# d7.save!
