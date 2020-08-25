@@ -7,7 +7,8 @@
 		<%= link_to "Précédent", :back, class: "btn btn-outline-primary-precedent" %>
 	</div>
 	<div class="container-card px-4 py-3 ">
-		<h1 class="d-flex justify-content-center">Conduite à tenir</h1>
+
+		<h1 class="d-flex justify-content-center"><%= @disease.name %>: Conduite à tenir</h1>
 		<p><%= raw @disease.behavior %></p>
 	</div>
 
