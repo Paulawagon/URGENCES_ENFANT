@@ -17,14 +17,14 @@
                     <li><%= child.first_name %></li>
                     <li><%= child.birth_date %></li>
                     <li><%= child.weight %>(kg)</li>
-                    <li>Cardiac <%= child.cardiac %></li>
-                    <li>Respiratory <%= child.respiratory %></li>
-                    <li>Prematurity <%= child.prematurity %></li>
+                    <li>Problème cardiaque <%= child.cardiac %></li>
+                    <li>Problème respiratoire <%= child.respiratory %></li>
+                    <li>Prematuré <%= child.prematurity %></li>
                     <div class="edit">
-                        <li><%= link_to "🖍", edit_child_path(child)%></li>
+                        <li><%= link_to "🖊", edit_child_path(child)%></li>
                     </div>
                     <div class="trash">
-                        <li><%= link_to "🗑", child, method: :delete, data: { confirm: "Are you sure ?" } %></li>
+                        <li><%= link_to "❌", child, method: :delete, data: { confirm: "Êtes-vous sur ?" } %></li>
                     </div>
                 </div>
             </ul>
@@ -32,14 +32,14 @@
     <% end %>
 </div>
 <div id="deco-ajout">
-    <%= link_to "Déconnexion", destroy_user_session_path, method: :delete, class: "btn-deconnexion" %>
     <%= link_to "Ajoutez votre enfant", new_child_path, class: "btn-ajout-enfant" %>
+    <%= link_to "Déconnexion", destroy_user_session_path, method: :delete, class: "btn-deconnexion" %>
 </div>
 <footer>
     <div id="navbar-contenair">
         <div class="icon_name">
             <i class="fas fa-home"></i>
-            <%= link_to "Home", root_path, class: "link-footer" %>
+            <%= link_to "Accueil", root_path, class: "link-footer" %>
         </div>
         <div class="icon_name">
             <i class="far fa-user-circle"></i>
