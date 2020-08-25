@@ -1,8 +1,6 @@
 <%= simple_form_for(@child) do |f| %>
   <div class="container_simple_form d-flex flex-column">
-                  <%= f.input :first_name,
-                              label: "Prénom",
-                              input_html: { autocomplete: "First date", class: "input-line full-width" } %>
+                
                   <%= f.input :birth_date,
                               label: "Date de naissance",
                               input_html: { autocomplete: "Birth date", class: "input-line full-width" } %>
