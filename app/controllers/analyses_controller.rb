@@ -12,6 +12,7 @@ class AnalysesController < ApplicationController
     @analysis = Analysis.new
 
     @symptoms = params[:analysis][:symptoms]
+
     @symptoms.delete_at(0)
     @all_possible_diseases = []
     @child = Child.find(params[:child_id])
@@ -27,8 +28,10 @@ class AnalysesController < ApplicationController
   end
 
   def find_disease_by_symptoms
+    @multiple_symptoms = false
     if @all_possible_diseases.empty?
       @all_possible_diseases = Disease.all.select do |disease|
+        @multiple_symptoms = true
         @symptoms.all? do |symptom|
           disease.symptoms.include? symptom
         end
