@@ -10,6 +10,20 @@
     justify-content: center;
 }
 
+.container_new_analysis {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    padding: 5px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    
+}
+
+#id_width {
+    width: 100vw !important;
+}
 
 .inputGroup {
     background-color: #fff;
@@ -19,7 +33,7 @@
 
     label {
         padding: 12px 30px;
-        width: 100vw;
+        width: 90%;
         display: block;
         text-align: left;
         color: #3C454C;
