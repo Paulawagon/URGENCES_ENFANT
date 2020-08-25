@@ -1,33 +1,26 @@
-<div class="container_btnn">
 <%= simple_form_for(@child) do |f| %>
   <div class="container_simple_form d-flex flex-column">
-								<%= f.input :first_name,
-                    label: "Prénom",
-                    input_html: { autocomplete: "First date", class: "input-line full-width" } %>
-<div class="container_simple_form">
-	<%= simple_form_for(@child) do |f| %>
-								<%= f.input :birth_date,
-                    label: "Date de naissance",
-                    input_html: { autocomplete: "Birth date", class: "input-line full-width" } %>
-								<%= f.input :weight,
-                    label: "Poids (Kg)",
-                    input_html: { autocomplete: "Weight", class: "input-line full-width" } %>
-						  <div class="inputGroup">
-								<%= f.input :cardiac,
-                    label: "Cardiaque",
-                    input_html: { autocomplete: "Cardiac", class: "input-line full-width hidden" } %>
-								<%= f.input :respiratory,
-                    label: "Respiratoire",
-                    input_html: { autocomplete: "Respiratory", class: "input-line full-width hidden" } %>
-					
-								<%= f.input :prematurity,
-                    label: "Prématuré",
-                    input_html: { autocomplete: "Prematurity", class: "input-line full-width hidden" } %>
-		 					</div>
+                  <%= f.input :first_name,
+                              label: "Prénom",
+                              input_html: { autocomplete: "First date", class: "input-line full-width" } %>
+                  <%= f.input :birth_date,
+                              label: "Date de naissance",
+                              input_html: { autocomplete: "Birth date", class: "input-line full-width" } %>
+                  <%= f.input :weight,
+                              label: "Poids (Kg)",
+                              input_html: { autocomplete: "Weight", class: "input-line full-width" } %>
+                <div class="inputGroup">
+                  <%= f.input :cardiac,
+                              label: "Cardiaque",
+                              input_html: { autocomplete: "Cardiac", class: "input-line full-width hidden" } %>
+                  <%= f.input :respiratory,
+                              label: "Respiratoire",
+                              input_html: { autocomplete: "Respiratory", class: "input-line full-width hidden" } %>
+            
+                  <%= f.input :prematurity,
+                              label: "Prématuré",
+                              input_html: { autocomplete: "Prematurity", class: "input-line full-width hidden" } %>
+                </div>
   </div>
-						<%= f.submit "Suivant", class: "btn-next-child" %>
-	<% end %>
-</div>
-
-
-<script src="main.js"></script>
+              <%= f.submit "Suivant", class: "btn-next-child" %>
+<% end %>
