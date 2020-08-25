@@ -4,6 +4,8 @@
 								<%= f.input :first_name,
                     label: "Prénom",
                     input_html: { autocomplete: "First date", class: "input-line full-width" } %>
+<div class="container_simple_form">
+	<%= simple_form_for(@child) do |f| %>
 								<%= f.input :birth_date,
                     label: "Date de naissance",
                     input_html: { autocomplete: "Birth date", class: "input-line full-width" } %>

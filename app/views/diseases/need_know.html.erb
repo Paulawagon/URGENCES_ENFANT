@@ -1,10 +1,13 @@
 
 <div class="container">
+	<div class="chiante">
+	<a href="tel:0616403054" class="a-link-secours">En cas de doute ou d'urgence vitale appelez le 15 ici !</a>
+	</div>
 	<div class=" d-flex justify-content-end">
 		<%= link_to "Précédent", :back, class: "btn btn-outline-primary-precedent" %>
 	</div>
 	<div class="container-card px-4 py-3 ">
-		<h1 class="d-flex justify-content-center">Ce qu'il faut savoir</h1>
+		<h1 class="d-flex justify-content-center"><%= @disease.name %>: Ce qu'il faut savoir</h1>
 		<p><%= raw @disease.need_know %></p>
 	</div>
 	<footer>
