@@ -23,7 +23,7 @@ end
 u1 = User.new(first_name: "Paula", last_name: "Pisa", email: "paula@test.fr", password: "123456")
 u1.save!
 
-e1 = Child.new(first_name: "Lola", birth_date: Date.new(2019, 11, 10), weight: 500, cardiac: false, respiratory: false, prematurity: false)
+e1 = Child.new(first_name: "Lola", birth_date: Date.new(2019, 11, 10), weight: 12, cardiac: false, respiratory: false, prematurity: false)
 e1.user = u1
 e1.save!
 
@@ -31,7 +31,7 @@ a1 = Analysis.new(symptoms: ["toux"])
 a1.child = e1
 a1.save!
 
-d1 = Disease.new(name: "Fièvre", symptoms: ["Fièvre"], behavior: "<p>
+d1 = Disease.new(name: "Fièvre", symptoms: ["Fièvre"], behavior: "<br><p>
      Découvrez votre enfant et ne surchauffez pas la pièce (entre 18 et 20°C
     maximum).
 <div>
@@ -53,7 +53,7 @@ d1 = Disease.new(name: "Fièvre", symptoms: ["Fièvre"], behavior: "<p>
     border-radius: 5px;'>Attention</span> de ne pas associer plusieurs médicaments contenant les mêmes
     molécules (ou des molécules de la même famille) comme du Doliprane® et de
     l’Efferalgan®</p><br><br><br><br>",
-    when_consult: "<strong><span class = 'rose' style='background-color:#FE7988 ; color: white ; border: 1px solid #FE7988; font-weight: bolder;
+    when_consult: "<br><strong><span class = 'rose' style='background-color:#FE7988 ; color: white ; border: 1px solid #FE7988; font-weight: bolder;
     border-radius: 5px;' >Consultez aux Urgences: </span></strong>
 <div list-style-type:none; margin-left: 2px;>
  <li>Si vous n'arrivez pas à réveiller votre enfant</li> 
@@ -69,9 +69,9 @@ d1 = Disease.new(name: "Fièvre", symptoms: ["Fièvre"], behavior: "<p>
 <strong>  - </strong>Si possible notez la durée des convulsions, elles s'arrêtent généralement d'elles-mêmes en quelques minutes<br>
 <strong>  - </strong>Si ce n'est pas le cas et que votre enfant ne se reveille pas complètement au delà de 10 minutes après le début des convulsions appeler le 15<br>
 </div><br>
-<span class = 'medoc' style='background-color: #66BBEC; color: white; border: 1px solid #66BBEC; font-weight: bolder; border-radius: 25px; '> *** </span>
+<span class = 'medoc' style='background-color: #66BBEC; color: white; border: 1px solid #66BBEC; font-weight: bolder; border-radius: 5px; '> *** </span>
 Si votre enfant ne présente pas de signes inquiètants, vous pouvez consulter au bout de 48 heures votre médecin traitant ou les urgences en cas d'impossibilité .<br><br><br><br>",
-                 need_know: " La température se mesure avec un thermomètre (au mieux en rectal, si vous prenez la température en axillaire ajoutez 0,5°C). <br><br>
+                 need_know: " <br>La température se mesure avec un thermomètre (au mieux en rectal, si vous prenez la température en axillaire ajoutez 0,5°C). <br><br>
 La notion ‘il est chaud’ ne veut rien dire. On considère qu’un enfant a de la fièvre quand sa température dépasse 
 <span class = 'rose' style='background-color:#FE7988 ; color: white ; border: 1px solid #FE7988; font-weight: bolder;border-radius: 5px; padding: 2px;'>38°C</span>.
 Généralement,  ce n’est qu’au-dessus de <span class = 'rose' style='background-color:#FE7988 ; color: white ; border: 1px solid #FE7988; font-weight: bolder;
@@ -81,7 +81,7 @@ L’ampleur de la fièvre n’est pas corrélée à la gravité de la maladie, l
 La fièvre fait partie d’un processus complexe de défense de l’organisme, c’est une réponse aux infections.<br><br>
 Seuls certains enfants (souvent avec un caractère familial) ont une susceptibilité particulière et peuvent convulser, même en cas de fièvre peu élevée).<br><br>
 <span class = 'medoc' style='background-color: #66BBEC; color: white; font-weight: bolder;border-radius: 5px; padding: 2px;'><strong>Ces convulsions sont généralement sans gravité, même si elles sont très impressionnantes !</strong></span><br><br><br><br>
-", prevention: "<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span> La fièvre est une réaction de défense face à un microbe, pour s'en protéger et éviter la contamination: lavez vous régulièrement les mains avec du savon ou une solution hydroalcoolique.<br><br>
+", prevention: "<br><span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span> La fièvre est une réaction de défense face à un microbe, pour s'en protéger et éviter la contamination: lavez vous régulièrement les mains avec du savon ou une solution hydroalcoolique.<br><br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span> Evitez, quand cela est possible, d’emmener votre enfant malade ou ayant moins de 3 mois dans les endroits publics confinés (transports en commun, centres commerciaux, etc.).<br><br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span> Ne pas partager les biberons, sucettes ou couverts.<br><br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span> Ouvrez les fenêtres de la pièce où il dort au moins 10 minutes par jour pour aérer.<br><br>
