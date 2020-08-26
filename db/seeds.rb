@@ -13,10 +13,10 @@ Child.destroy_all
 User.destroy_all
 Disease.destroy_all
 
-# CSV.foreach(Rails.root.join("db/hospitals.csv")) do |row|
-# puts "creating #{row[0]}"
-# Hospital.create(name: row[0], address: row[1])
-#  end
+CSV.foreach(Rails.root.join("db/hospitals.csv")) do |row|
+puts "creating #{row[0]}"
+Hospital.create(name: row[0], address: row[1])
+ end
 
 u1 = User.new(first_name: "Paula", last_name: "Pisa", email: "paula@test.fr", password: "123456")
 u1.save!
