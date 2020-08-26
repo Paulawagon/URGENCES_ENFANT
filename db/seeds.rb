@@ -146,8 +146,7 @@ Puis la toux est plus fréquente, la respiration peut devenir sifflante.<br>
 L’enfant peut être gêné pour respirer et avoir du mal à manger et à dormir.<br>
 Il peut avoir de la fièvre.<br><br>
 Dans la majorité des cas, la bronchiolite guérit spontanément au bout de 5 à 10 jour mais peut persister pendant 2 à 4 semaines.<br>
-<br>La bronchiololite est une maladie respiratoire très fréquentes chez les nourrissons et les enfants de moins de 2 ans. Elle est due le plus souvent à un virus appelé Virus Respiratoire Syndical (VRS) qui touche les petites bronches."
-, 
+<br>La bronchiololite est une maladie respiratoire très fréquentes chez les nourrissons et les enfants de moins de 2 ans. Elle est due le plus souvent à un virus appelé Virus Respiratoire Syndical (VRS) qui touche les petites bronches.",
 prevention: "Les virus responsables des rhumes et des bronchiolites sont très contagieux.<br>
 Le risque pour les jeunes enfants est la bronchiolite.Elle est due le plus souvent à un virus appelé Virus Respiratoire Syncytial (VRS) qui touche les petites bronches.<br>
 Les adultes et les grands enfants qui sont porteurs du virus respiratoire syncytial n’ont habituellement aucun signe ou ont un simple rhume. <br><br>
