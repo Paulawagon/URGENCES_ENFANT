@@ -11,24 +11,24 @@
 </div>
 <div class="container-children">
     <% @children.each do |child| %>
-        <%= link_to new_child_analysis_path(child), class: "link-cards" do %>
-            <ul class="ul-profil-2">
-                <div class="container-profil">
-                    <li><%= child.first_name %></li>
-                    <li><%= child.birth_date %></li>
-                    <li><%= child.weight %>(kg)</li>
-                    <li>Problème cardiaque <%= child.cardiac %></li>
-                    <li>Problème respiratoire <%= child.respiratory %></li>
-                    <li>Prematuré <%= child.prematurity %></li>
-                    <div class="edit">
-                        <li><%= link_to "🖊", edit_child_path(child)%></li>
-                    </div>
-                    <div class="trash">
-                        <li><%= link_to "❌", child, method: :delete, data: { confirm: "Êtes-vous sur ?" } %></li>
-                    </div>
-                </div>
-            </ul>
-        <% end %>
+    <%= link_to new_child_analysis_path(child), class: "link-cards" do %>
+    <ul class="ul-profil-2">
+        <div class="container-profil">
+            <li><%= child.first_name %></li>
+            <li><%= child.birth_date %></li>
+            <li><%= child.weight %>(kg)</li>
+            <li>Problème cardiaque <%= child.cardiac %></li>
+            <li>Problème respiratoire <%= child.respiratory %></li>
+            <li>Prematuré <%= child.prematurity %></li>
+            <div class="edit">
+                <li><%= link_to "🖊", edit_child_path(child)%></li>
+            </div>
+            <div class="trash">
+                <li><%= link_to "❌", child, method: :delete, data: { confirm: "Êtes-vous sur ?" } %></li>
+            </div>
+        </div>
+    </ul>
+    <% end %>
     <% end %>
 </div>
 <div id="deco-ajout">
