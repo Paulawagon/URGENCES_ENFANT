@@ -1,42 +1,39 @@
 <div id="banner">
   <%= image_tag "background.png", class: "image-connexion" %>
 </div>
-
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="form-inputs-login">
-    <div id="email-form">
+<div class="form-inputs-login">
+  <div id="email-form">
     <%= f.input :email,
-                required: false,
-                autofocus: true,
-                input_html: { autocomplete: "email", class: "btn-login" } %>
-                </div>
-    <%= f.input :password,
+    required: false,
+    autofocus: true,
+    input_html: { autocomplete: "email", class: "btn-login" } %>
+  </div>
+  <%= f.input :password,
   label: "Mot de passe",
-                required: false,
-                input_html: { autocomplete: "current-password", class: "btn-login" } %>
-    
-  </div>
-
-  <div class="form-actions">
-    <%= f.button :submit, "Validez", class: "btn-connexion" %>
-    <br>
-    <%= link_to "Pas de compte ? Crée en un ici.", new_user_registration_path, class: "btn-link-login" %>
-  </div>
+  required: false,
+  input_html: { autocomplete: "current-password", class: "btn-login" } %>
+  
+</div>
+<div class="form-actions">
+  <%= f.button :submit, "Validez", class: "btn-connexion" %>
+  <br>
+  <%= link_to "Pas de compte ? Crée en un ici.", new_user_registration_path, class: "btn-link-login" %>
+</div>
 <% end %>
-
 <footer>
   <div id="navbar-contenair">
     <div class="icon_name">
-    <i class="fas fa-home"></i>
-    <%= link_to "Home", root_path, class: "link-footer" %>
+      <i class="fas fa-home"></i>
+      <%= link_to "Home", root_path, class: "link-footer" %>
     </div>
     <div class="icon_name">
-    <i class="far fa-user-circle"></i>
-    <%= link_to "Profil", profil_path, class: "link-footer" %>
+      <i class="far fa-user-circle"></i>
+      <%= link_to "Profil", profil_path, class: "link-footer" %>
     </div>
     <div class="icon_name">
-    <i class="fas fa-book-open"></i>
-    <%= link_to "Préventions", diseases_path, class: "link-footer" %>
+      <i class="fas fa-book-open"></i>
+      <%= link_to "Préventions", diseases_path, class: "link-footer" %>
     </div>
   </div>
 </footer>
