@@ -3,7 +3,7 @@
 </div>
 
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="form-inputs">
+  <div class="form-inputs-login">
     <div id="email-form">
     <%= f.input :email,
                 required: false,
@@ -11,6 +11,7 @@
                 input_html: { autocomplete: "email", class: "btn-login" } %>
                 </div>
     <%= f.input :password,
+  label: "Mot de passe",
                 required: false,
                 input_html: { autocomplete: "current-password", class: "btn-login" } %>
     
