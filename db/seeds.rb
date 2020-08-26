@@ -46,15 +46,15 @@ d1 = Disease.new(name: "Fièvre", symptoms: ["Fièvre"], behavior: "<p>
     elle est bien supportée par l’enfant. Le but du traitement n’est pas de
     normaliser à tout prix la température, mais d’améliorer le confort de
     l’enfant.</p>
-    <p><strong><span class = 'medoc' style='background-color: #66BBEC; color: white; border: 1px solid #66BBEC; font-weight: bolder; border-radius: 25px;'>Les médicaments: </span></strong>
+    <p><strong><span class = 'medoc' style='background-color: #66BBEC; color: white; border: 1px solid #66BBEC; font-weight: bolder; border-radius: 5px;'>Les médicaments: </span></strong>
     avant l’avis de votre médecin, ne donnez qu’un seul médicament contre la
     fièvre à la fois : le paracétamol (par exemple : Doliprane®, Efferalgan®, Dolko®, Dafalgan®) toutes les 6 heures si besoin.</p>
     <p><span class= 'warning' style='background-color: #FE7988; color: white; border: 1px solid #FE7988; font-weight: bolder;
-    border-radius: 25px;'>Attention</span> de ne pas associer plusieurs médicaments contenant les mêmes
+    border-radius: 5px;'>Attention</span> de ne pas associer plusieurs médicaments contenant les mêmes
     molécules (ou des molécules de la même famille) comme du Doliprane® et de
     l’Efferalgan®</p><br><br><br><br>",
-                 when_consult: "<strong><span class = 'rose' style='background-color:#FE7988 ; color: white ; border: 1px solid #FE7988; font-weight: bolder;
-    border-radius: 25px;' >Consultez aux Urgences: </span></strong>
+    when_consult: "<strong><span class = 'rose' style='background-color:#FE7988 ; color: white ; border: 1px solid #FE7988; font-weight: bolder;
+    border-radius: 5px;' >Consultez aux Urgences: </span></strong>
 <div list-style-type:none; margin-left: 2px;>
  <li>Si vous n'arrivez pas à réveiller votre enfant</li> 
  <li>S’il a une éruption cutanée </li> 
@@ -73,7 +73,7 @@ d1 = Disease.new(name: "Fièvre", symptoms: ["Fièvre"], behavior: "<p>
 Si votre enfant ne présente pas de signes inquiètants, vous pouvez consulter au bout de 48 heures votre médecin traitant ou les urgences en cas d'impossibilité .<br><br><br><br>",
                  need_know: " La température se mesure avec un thermomètre (au mieux en rectal, si vous prenez la température en axillaire ajoutez 0,5°C). <br><br>
 La notion ‘il est chaud’ ne veut rien dire. On considère qu’un enfant a de la fièvre quand sa température dépasse 
-<span class = 'rose' style='background-color:#FE7988 ; color: white ; border: 1px solid #FE7988; font-weight: bolder;border-radius: 25px; padding: 2px;'>38°C</span>.
+<span class = 'rose' style='background-color:#FE7988 ; color: white ; border: 1px solid #FE7988; font-weight: bolder;border-radius: 5px; padding: 2px;'>38°C</span>.
 Généralement,  ce n’est qu’au-dessus de <span class = 'rose' style='background-color:#FE7988 ; color: white ; border: 1px solid #FE7988; font-weight: bolder;
 border-radius: 5px; padding: 1px;'>38,5°C</span> que l’on envisage un traitement.<br><br>
 Il n’est pas nécessaire de traiter systématiquement la fièvre surtout si elle est bien supportée par l’enfant. Le but du traitement n’est pas de normaliser à tout prix la température, mais d’améliorer le confort de l’enfant. <br><br>
@@ -90,7 +90,7 @@ Seuls certains enfants (souvent avec un caractère familial) ont une susceptibil
 d1.save!
 
 d2 = Disease.new(name: "Toux", symptoms: ["Toux"], behavior: " Les médicaments contre la toux ne servent à rien et <span style='text-decoration: underline; text-decoration-color: #FE7988;'> ne sont pas conseillés </span>car ils peuvent avoir des effets secondaires dangereux.<br><br>
-<span class = 'rose' style='background-color:#FE7988; color: white; border: 1px solid #FE7988; font-weight: bolder; border-radius: 25px;'><strong> Ne jamais donner de miel à un enfant de moins de 1 an (risque de botulisme).</strong></span><br><br>
+<span class = 'rose' style='background-color:#FE7988; color: white; border: 1px solid #FE7988; font-weight: bolder; border-radius: 5px;'><strong> Ne jamais donner de miel à un enfant de moins de 1 an (risque de botulisme).</strong></span><br><br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Même s'il ne vous paraît pas enrhumé, nettoyer lui le nez au moins 6 fois par jour avec du sérum physiologique, en particulier avant de lui donner à boire ou à manger.<br><br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Lui donner régulièrement de l’eau à boire pour éviter la déshydratation.<br><br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Fractionnez  ses repas (lui donner à manger plus souvent et en plus petites quantités).<br><br>
@@ -98,7 +98,7 @@ d2 = Disease.new(name: "Toux", symptoms: ["Toux"], behavior: " Les médicaments 
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Ne pas trop le couvrir.<br><br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Continuer à le coucher sur le dos à plat.<br><br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Ne jamais fumer près de lui. <br><br><br><br> ", 
-when_consult: "<strong><span class = 'rose' style='background-color:#FE7988 ; color: white ; border: 1px solid #FE7988; font-weight: bolder;
+when_consult: "<br><strong><span class = 'rose' style='background-color:#FE7988 ; color: white ; border: 1px solid #FE7988; font-weight: bolder;
 border-radius: 5px;' >Il est préférable de se rendre rapidement aux urgences : </span></strong> <br>
     <div list-style-type:none; margin-left: 2px;>
 <li>En cas de suspicion d'inhalation de corps étranger.</li><br>
@@ -106,7 +106,7 @@ border-radius: 5px;' >Il est préférable de se rendre rapidement aux urgences :
 <li>Si vous n'arrivez pas à réveiller votre enfant, s'il présente une coloration bleue des lèvres ou des extrêmités ou une difficulté respiratoire : sa respiration est très rapide ou fait un bruit anormal, ses muscles du cou ou du thorax se contractent pour respirer, son thorax se creuse.</li><br>
 </div>
 <span class = 'medoc' style='background-color: #66BBEC; color: white; border: 1px solid #66BBEC; font-weight: bolder; border-radius: 5px; '> *** </span>
-Si votre enfant ne présente pas de signes inquiètants, consultez votre médecin traitant ou les urgences en cas d'impossibilité", 
+Si votre enfant ne présente pas de signes inquiètants, consultez votre médecin traitant ou les urgences en cas d'impossibilité.", 
 need_know: " La toux est une réaction de défense du système respiratoire afin d'expulser un agent infectieux ou un corps étranger. <br><br>
 Il ne faut pas tenter de la stopper, même si elle est gênante.<br><br>
 La bronchiolite est une cause fréquente de toux chez l'enfant de moins de 2 ans, elle débute par un simple rhume, puis la toux devient plus fréquente, la respiration peut devenir sifflante. L’enfant peut être gêné pour respirer et avoir du mal à manger. Il peut avoir de la fièvre.<br><br>
@@ -121,7 +121,7 @@ Il peut rester sur les mains et les objets.<br><br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Evitez, quand cela est possible, d’emmener votre enfant malade ou ayant moins de 3 mois dans les endroits publics confinés (transports en commun, centres commerciaux, etc.).</span><br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Ne pas partager les biberons, sucettes ou couverts.</span><br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Ouvrez les fenêtres de la pièce où il dort au moins 10 minutes par jour pour aérer.</span><br>
-<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span> Maintenir la température de la pièce aux alentours de 19°C </span><br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span> Maintenir la température de la pièce aux alentours de 19°C. </span><br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Ne pas fumer à côté des bébés et des enfants.</span><br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Lorsque l’on est soi-même enrhumé se couvrir la bouche lorsque l’on tousse avec son coude ou sa manche.</span><br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span> Portez un masque lorsque l’on s’occupe de son bébé. Evitez d’embrasser son enfant sur le visage et sur les mains.</span><br>
@@ -146,17 +146,17 @@ Puis la toux est plus fréquente, la respiration peut devenir sifflante.<br>
 L’enfant peut être gêné pour respirer et avoir du mal à manger et à dormir.<br>
 Il peut avoir de la fièvre.<br><br>
 Dans la majorité des cas, la bronchiolite guérit spontanément au bout de 5 à 10 jour mais peut persister pendant 2 à 4 semaines.<br>
-<br>La bronchiololite est une maladie respiratoire très fréquentes chez les nourrissons et les enfants de moins de 2 ans. Elle est due le plus souvent à un virus appelé Virus Respiratoire Syndical (VRS) qui touche les petites bronches.\n
-Les épidémies de bronchiolite débutent généralement au cours du mois d’octobre et se terminent courant janvier.", 
+<br>La bronchiololite est une maladie respiratoire très fréquentes chez les nourrissons et les enfants de moins de 2 ans. Elle est due le plus souvent à un virus appelé Virus Respiratoire Syndical (VRS) qui touche les petites bronches."
+, 
 prevention: "Les virus responsables des rhumes et des bronchiolites sont très contagieux.<br>
-Le risque pour les jeunes enfants est la bronchiolite.Elle est due le plus souvent à un virus appelé Virus Respiratoire Syncytial (VRS) qui touche les petites bronches..<br>
+Le risque pour les jeunes enfants est la bronchiolite.Elle est due le plus souvent à un virus appelé Virus Respiratoire Syncytial (VRS) qui touche les petites bronches.<br>
 Les adultes et les grands enfants qui sont porteurs du virus respiratoire syncytial n’ont habituellement aucun signe ou ont un simple rhume. <br><br>
 Le virus se transmet facilement par la salive, la toux, et les éternuements.<br>
 Le virus peut rester sur les mains et les objets (comme sur les jouets, les tétines, les « doudous »).<br>
 Se laver les mains pendant 30 secondes avec de l’eau et du savon avant et après un change, une tétée, câlins, biberon, repas, etc. ou en utilisant une solution hydroalcoolique.<br>
 Evitez, quand cela est possible, d’emmener son enfant dans les endroits publics confinés (transports en commun, centres commerciaux, etc.) où il risquerait d’être en contact avec des personnes enrhumées.<br>
 Ne pas partager les biberons, sucettes ou couverts non lavés<br>
-Lavez régulièrement jouets et doudous.
+Lavez régulièrement jouets et doudous.<br>
 Ouvrez les fenêtres de la pièce où il dort au moins 10 minutes par jour pour aérer.<br>
 En ne fumant pas à côté des bébés et des enfants.<br>
 Lorsque l’on est soi-même enrhumé se couvrir la bouche lorsque l’on tousse avec son coude ou sa manche. Portez un masque lorsque l’on s’occupe de son bébé.<br>
@@ -165,7 +165,7 @@ Evitez d’embrasser son enfant sur le visage et sur les mains.<br><br><br>")
 d3.save!
 
 d4 = Disease.new(name: "Diarrhées", symptoms: ["Diarrhées"], behavior: " Le principal danger de la diarrhée c’est la déshydratation, c’est-à-dire un manque d’eau dans le corps.<br>
-Le meilleur moyen d’éviter ou de traiter un déshydratation est de donner à boire à votre enfant une Solution de réhydratation orale (SRO).<br>
+Le meilleur moyen d’éviter ou de traiter un déshydratation est de donner à boire à votre enfant une <span class = 'rose' style='color:#FE7988 ; '>Solution de réhydratation orale (SRO)</span>.<br>
 Ce soluté est disponible en pharmacie sans ordonnance. <br>
 Il se présente sous forme de sachets à diluer dans 200ml d’eau. Une fois reconstituée la solution peut se conserver 24h au frigo. <br>
 Proposez fréquemment la SRO à boire à votre enfant, au début plusieurs fois par heure.<br>
@@ -175,29 +175,48 @@ Ensuite, laissez votre enfant boire la SRO à volonté, selon sa soif, le temps 
 Si vous allaitez, poursuivez comme d’habitude et proposez de la SRO à votre enfant entre les têtées.<br>
 <span class = 'rose' style='color:#FE7988 ; '>Si votre bébé prend du lait en poudre, arrêtez le lait et donnez-lui à boire de la SRO à la place.</span><br>
 Après douze heures de SRO seule, proposez-lui à nouveau le lait habituel avec de la SRO entre les biberons.<br><br><br><br>
-", when_consult: "Si votre petit enfant a la diarrhée, que vous n’avez pas de SRO avec vous et vous ne pouvez pas vous en procurer rapidement, appeler rapidement votre médecin ou le 15.<br>
-Si votre enfant vomit, que les selles ne diminuent pas, qu’il refuse de boire et de manger, s’il a une température supérieure à 38,5°C, s’il est très fatigué, qu’il a les yeux cernés, creusés, s’il n’est pas comme d’habitude, ou s’il a du sang dans les selles rappelez rapidement votre médecin ou consultez les services d’urgences<br><br>
-Si votre enfant ne présente pas de signes inquiétants, vous pouvez consulter au bout de 48 heures votre médecin traitant ou les urgences en cas d'impossibilité.",
-need_know: "La gastro-entérite aigue est une cause fréquente de diarrhées et de vomissements chez l’enfant. <br>
-Son origine est généralement virale. On peut attraper le virus par contact avec les selles, la salive ou les vomissements d’une personne contaminée.<br>
-Le saviez-vous ? Un vaccin existe contre le principal virus responsable : le rotavirus. Parlez-en à votre médecin traitant !
-.", prevention: "Pour éviter de tomber malade ou que votre enfant transmette son microbe aux autres des mesures simples existent : <br>
-Lavage régulier des mains avec du savon ou une solution hydroalcoolique, surtout après s’être mouché, avoir toussé, être allé aux toilettes ou après avoir changé son bébé, après avoir pris les transports en commun, avant de préparer les repas etc...\n
-Ne pas partager les biberons, sucettes, bouteilles d’eau ou couverts. Lavez régulièrement jouets et doudous.<br>
-Eviter, quand cela est possible, d’emmener votre enfant malade ou ayant moins de 3 mois dans les endroits publics confinés (transports en commun, centres commerciaux, etc…)<br><br>
-RAPPEL: Un vaccin existe contre le principal virus responsable : le rotavirus.<br><br>")
+", when_consult: "<br>Si votre petit enfant a la diarrhée, que vous n’avez pas de SRO avec vous et vous ne pouvez pas vous en procurer rapidement, appeler rapidement votre médecin ou le 15.<br><br>
+ <strong><span class = 'rose' style='background-color:#FE7988 ; color: white ; border: 1px solid #FE7988; font-weight: bolder;
+    border-radius: 5px;' >Rappelez rapidement votre médecin ou consultez les services d’urgences</span><br>
+     <div list-style-type:none; margin-left: 2px;>
+ <li>Si votre enfant vomit</li>
+ <li>Ses selles ne diminuent pas</li>
+ <li> Votre enfant refuse de boire et de manger</li>
+ <li>Sa température est supérieure à 38,5°C</li>
+ <li>Votre enfant est très fatigué</li>
+ <li>Il a les yeux cernés creusés</li> 
+ <li>Il n’est pas comme d’habitude</li>
+  <li>Il a du sang dans les selles<br><br>
+<strong><span class = 'medoc' style='background-color: #66BBEC; color: white; border: 1px solid #66BBEC; font-weight: bolder; border-radius: 5px;'>+++</span></strong>Si votre enfant ne présente pas de signes inquiétants, vous pouvez consulter au bout de 48 heures votre médecin traitant ou les urgences en cas d'impossibilité.",
+need_know: "<br>La gastro-entérite aigue est une cause fréquente de diarrhées et de vomissements chez l’enfant. <br>
+Son origine est généralement virale.<br>
+On peut attraper le virus par contact avec les selles, la salive ou les vomissements d’une personne contaminée.<br>
+<strong><span class = 'medoc' style='background-color: #66BBEC; color: white; border: 1px solid #66BBEC; font-weight: bolder; border-radius: 5px;'>+++</span></strong>Le saviez-vous ? Un vaccin existe contre le principal virus responsable : le rotavirus. Parlez-en à votre médecin traitant !<br>
+.", prevention: "Pour éviter de tomber malade ou que votre enfant transmette son microbe aux autres, des mesures simples existent : <br>
+<div list-style-type:none; margin-left: 2px;>
+<li>Lavage régulier des mains avec du savon ou une solution hydroalcoolique, surtout après s’être mouché, avoir toussé, être allé aux toilettes ou après avoir changé son bébé, après avoir pris les transports en commun, avant de préparer les repas etc...</li>
+<li>Ne pas partager les biberons, sucettes, bouteilles d’eau ou couverts.</li>
+<li> Lavez régulièrement jouets et doudous.</li><br>
+<li>Eviter, quand cela est possible, d’emmener votre enfant malade ou ayant moins de 3 mois dans les endroits publics confinés (transports en commun, centres commerciaux, etc…)</li><br>
+<strong><span class = 'rose' style='background-color:#FE7988 ; color: white ; border: 1px solid #FE7988; font-weight: bolder;
+    border-radius: 5px;' >RAPPEL: </span></strong>Un vaccin existe contre le principal virus responsable : le rotavirus.<br><br>")
 
 d4.save!
 
-d5 = Disease.new(name: "Vomissements", symptoms: ["Vomissements"], behavior: " Le principal danger des vomissements c’est la déshydratation, c’est-à-dire un manque d’eau dans le corps. Le meilleur moyen d’éviter ou de traiter une déshydratation est de donner à boire à votre enfant une Solution de réhydratation orale (SRO).\n
-Donnez souvent la SRO à boire à votre enfant, au début plusieurs fois par heure.<br>
-Si votre enfant vomit, donnez-lui la solution bien fraîche, au début toutes les 5 à 10 minutes, par petites gorgées ou même à la cuillère.<br>
-Ensuite, laissez votre enfant boire la SRO à volonté, selon sa soif, le temps que dure les vomissements.<br>
-Si vous allaitez, poursuivez comme d’habitude et proposez de la SRO à votre enfant entre les têtées.<br>
-Si votre bébé prend du lait en poudre, arrêtez le lait et donnez-lui à boire de la SRO à la place. Après douze heures de SRO seule, proposez-lui à nouveau le lait habituel avec de la SRO entre les biberons.<br>
-Evitez toute autre composition artisanale (eau de riz, soupe de carottes, cola éventé…)<br>
-Notez les quantités de biberons bues. Comptabilisez les selles et les vomissements. Mesurez sa température. Pesez votre enfant ( en pharmacie par exemple).
- ", when_consult: "Consultez votre médecin traitant si votre enfant a:<br>
+d5 = Disease.new(name: "Vomissements", symptoms: ["Vomissements"], behavior: "<br>Le principal danger des vomissements c’est la déshydratation, c’est-à-dire un manque d’eau dans le corps. <br>
+Le meilleur moyen d’éviter ou de traiter une déshydratation est de donner à boire à votre enfant une  <span class = 'rose' style='color:#FE7988 ; '>Solution de réhydratation orale (SRO)</span>.<br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Donnez souvent la SRO à boire à votre enfant, au début plusieurs fois par heure.</strong></span><br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Donnez-lui la solution bien fraîche, au début toutes les 5 à 10 minutes, par petites gorgées ou même à la cuillère.</strong></span><br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Ensuite, laissez votre enfant boire la SRO à volonté, selon sa soif, le temps que dure les vomissements</strong></span><br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Si vous allaitez, poursuivez comme d’habitude et proposez de la SRO à votre enfant entre les têtées</strong></span><br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Si votre bébé prend du lait en poudre, <span class = 'rose' style='color:#FE7988 ; '>arrêtez le lait</span> et donnez-lui à boire de la SRO à la place</strong></span>.<br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span> Après douze heures de SRO seule, proposez-lui à nouveau le lait habituel avec de la SRO entre les biberons.</strong></span><br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span><span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Evitez toute autre composition artisanale (eau de riz, soupe de carottes, cola éventé…)<br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Notez les quantités de biberons bues</strong></span><br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Comptabilisez les selles et les vomissements</strong></span><br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span> Mesurez sa température</strong></span> <br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Pesez votre enfant ( en pharmacie par exemple)</strong></span><br><br>
+ ", when_consult: "<br>Consultez votre médecin traitant si votre enfant a:<br><br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Les yeux cernés, creusés<br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Un teint pâle ou grisâtre<br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Une respiration rapide<br>
@@ -207,40 +226,28 @@ Notez les quantités de biberons bues. Comptabilisez les selles et les vomisseme
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Une sécheresse cutanée (peau plissée)<br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Perte de poids importante<br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>S’il continue à vomir malgré la solution que vous lui avez proposée en fractionnée",
-                 need_know: "La SRO est disponible en pharmacie sans ordonnance.",
-                 prevention: " La gastro-entérite est une infection le plus souvent virale.<br>
-Afin de diminuer le risque de contamination :
+                 need_know: "<br>La SRO est disponible en pharmacie sans ordonnance.<br>
+                 La gastro-entérite aigue est une cause fréquente de diarrhées et de vomissements chez l’enfant.<br>
+                  Son origine est généralement virale. On peut attraper le virus par contact avec les selles, la salive ou les vomissements d’une personne contaminée.<br><br>",
+                 prevention: " La gastro-entérite est une infection le plus souvent virale.<br><br>
+Afin de diminuer le risque de contamination :<br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Lavage systématique des mains après chaque change, avant chaque préparation alimentaire, après chaque contact de manière générale avec un enfant malade.<br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Lavage des surfaces et du matériel en contact avec l’enfant malade (table à langer, sucettes, biberons.. <br><br><br><br>")
 
 d5.save!
 
 d6 = Disease.new(name: "Douleurs abdominales", symptoms: ["Douleurs abdominales"],
-                 behavior: " Le principal danger des vomissements c’est la déshydratation, c’est-à-dire un manque d’eau dans le corps.<br><br>
-Le meilleur moyen d’éviter ou de traiter une déshydratation est de donner à boire à votre enfant une<span class = 'rose' style='color:#FE7988 ; '><strong> Solution de réhydratation orale (SRO)</strong></span>.<br><br>
-Donnez souvent la SRO à boire à votre enfant, au début plusieurs fois par heure.<br><br>
-Si votre enfant vomit, donnez-lui la solution bien fraîche, au début toutes les 5 à 10 minutes, par petites gorgées ou même à la cuillère.<br><br>
-Ensuite, laissez votre enfant boire la SRO à volonté, selon sa soif, le temps que dure les vomissements.<br><br>
-Si vous allaitez, poursuivez comme d’habitude et proposez de la SRO à votre enfant entre les têtées.<br><br>
-Si votre bébé prend du lait en poudre, arrêtez le lait et donnez-lui à boire de la SRO à la place. Après douze heures de SRO seule, proposez-lui à nouveau le lait habituel avec de la SRO entre les biberons.<br><br>
-Evitez toute autre composition artisanale (eau de riz, soupe de carottes, cola éventé…)<br><br>
-Notez les quantités de biberons bues. Comptabilisez les selles et les vomissements. Mesurez sa température. Pesez votre enfant ( en pharmacie par exemple).<br>
+                 behavior: "<br>
  <p><strong><span class = 'medoc' style='background-color: #66BBEC; color: white; border: 1px solid #66BBEC; font-weight: bolder; border-radius: 25px;'>Les médicaments: </span></strong>
-    avant l’avis de votre médecin, ne donnez qu’un seul médicament contre la
-    fièvre à la fois : le paracétamol (par exemple : Doliprane®, Efferalgan®, Dolko®, Dafalgan®) toutes les 6 heures si besoin.</p>
+    Avant l’avis de votre médecin, ne donnez qu’un seul médicament à la fois contre les douleurs abdominales: le paracétamol (par exemple : Doliprane®, Efferalgan®, Dolko®, Dafalgan®) toutes les 6 heures si besoin.</p>
     <p><span class= 'warning' style='background-color: #FE7988; color: white; border: 1px solid #FE7988; font-weight: bolder;
     border-radius: 25px;'>Attention</span> de ne pas associer plusieurs médicaments contenant les mêmes
     molécules (ou des molécules de la même famille) comme du Doliprane® et de
     l’Efferalgan®</p><br><br>
- ", when_consult: "Consultez votre médecin traitant si votre enfant a:<br><br>
-<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Les yeux cernés, creusés<br><br>
-<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Un teint pâle ou grisâtre<br><br>
-<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Une respiration rapide<br><br>
-<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Une somnolence<br><br>
-<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Des geignements, des pleurs<br><br>
-<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Une sécheresse des muqueuses (bouche et langue) et cutanée (peau plissée)<br><br>
-<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Perte de poids importante<br><br>
-<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>S’il continue à vomir malgré la solution que vous lui avez proposée en fractionnée<br><br><br><br>",
+ ", when_consult: "<br>Si votre enfant à des douleurs abdominales intenses non calmées par les médicaments.<br>
+ Si vous n'arrivez pas à bien réveiller votre enfant ou à l’alimenter (il mange ou boit moins de la moitié de ses quantités habituelles sur la journée) <br><br>
+ Si votre enfant ne présente pas de signes inquiétants, vous pouvez consulter au bout de 48 heures votre médecin traitant ou les urgences en cas d'impossibilité.<br>
+ s’il a une éruption cutanée qui ne s’efface pas quand vous appuyez dessus, s’il présente une coloration bleue des lèvres ou des extrémités, des tremblements, des convulsions ou une difficulté respiratoire (sa respiration est très rapide ou fait un bruit anormal, ses muscles du cou ou du thorax se contractent pour respirer, son thorax se creuse, il a du mal à parler).<br>", 
                  need_know: "<br><br>La SRO est disponible en pharmacie sans ordonnance.",
                  prevention: " <brLa gastro-entérite est une infection le plus souvent virale.<br>
 Afin de diminuer le risque de contamination :<br>
