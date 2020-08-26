@@ -227,7 +227,31 @@ Afin de diminuer le risque de contamination :<br>
 
 d6.save!
 
-d7 = Disease.new(name: "Brûlures", symptoms: ["Brûlures"], behavior: "Si votre enfant se brûle, ne paniquez pas. Refroidisser la brûlure à l’eau froide (15°C environ) pendant 15 min",
- when_consult: "Plaie dont la taille est supérieure à 10 cm", need_know: "Ne pas appliquer de dentifrice", prevention: "Afin d'éviter les brulures liées au soleil appliquer un écran total")
+d7 = Disease.new(name: "Brûlures", symptoms: ["Brûlures"], behavior: "Si votre enfant se brûle,<span class = 'rose' style='color:#FE7988 ; '><strong> ne paniquez pas</strong></span>. Refroidisser la brûlure à l’eau froide (<span class = 'rose' style='color:#FE7988 ; '><strong>15°C</strong></span> environ) pendant <span class = 'rose' style='color:#FE7988 ; '><strong>15 min</strong></span><br>
+Quel que soit leur degré de gravité, les brûlures nécessitent une prise en charge adaptée pour éviter des complications, une surinfection et la déshydratation",
+ when_consult: "En termes d’étendue, une brûlure est grave lorsque sa surface est supérieure à la moitié de la paume de la main de la victime.<br>
+ La gravité d’une brûlure dépend de son étendue, de sa localisation et de son degré.<br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Au premier degré, la peau est rouge, sans cloques.</span> <br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Au deuxième degré, la peau comporte des cloques remplies de liquide.</span> <br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Au troisième degré, la peau est noire ou blanchâtre et insensible. </span><br>
+ Les brûlures localisées au niveau des yeux, du nez, des mains, des orifices naturels, des organes génitaux ou de l'intérieur des cuisses sont classées parmi les brûlures graves.<br>",
+  need_know: "Une brûlure peut être provoquée par la chaleur : air chaud, vapeur, eau bouillante, flamme, soleil, cigarette, etc. Mais aussi par un frottement, l’électricité ou une substance chimique.<br>
+  La prise en charge médicale des brûlures diffère selon leur origine.<br>
+   Les enfants de moins de 5 ans représentent plus d’un quart des victimes hospitalisées pour brûlures. <br>
+   Celles-ci sont le plus souvent causées par contact avec des liquides chauds. <br>
+   Les contacts avec un solide chaud, par exemple, une plaque électrique, sont la deuxième cause de brûlures chez les enfants de moins de 4 ans.<br>
+  Les complications sont avant tout locales. Le risque principal est que la cicatrisation soit de mauvaise qualité, ce qui aura des conséquences esthétiques et parfois fonctionnelles (peau rétractée).<br>
+En fonction de sa profondeur, la cicatrisation d’une brûlure peut être plus ou moins difficile.<br>
+ Elle peut nécessiter des soins pendant plusieurs semaines", 
+ prevention: "Des règles de prudence simples permettent le plus souvent d’éviter les brûlures :<br><br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Prévenez les coups de soleil, surtout chez les enfants (utilisez casquette, chapeau, tee-shirt, crème solaire à indice de protection élevé, etc.).<br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Ne laissez jamais les enfants seuls près d’une source de chaleur (cuisinière, four, bougies, feu de cheminée, grill, barbecue, etc.). Placez les casseroles contenant des aliments chauds hors de leur portée en tournant le manche vers le mur. Munissez la cuisinière d’un dispositif de protection.<br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Vérifiez la température de l’eau du bain, notamment pour les très jeunes enfants. Si l’eau du robinet est très chaude, faites-la régler.<br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Ne buvez pas de liquide chaud (thé, café, chocolat, soupe, etc.) lorsque vous avez un enfant sur les genoux.<br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Ne tentez jamais d’allumer ou de ranimer un feu ou un barbecue avec de l’alcool à brûler ou de l’essence.<br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Ne fumez jamais en présence de substances inflammables.<br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Respectez les consignes d’utilisation des réchauds, radiateurs, fers à repasser, fers à souder, etc.<br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>N’effectuez jamais de branchements électriques sans avoir coupé l’arrivée d’électricité.<br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Pour éviter les brûlures chimiques, tenez hors de portée des enfants les produits ménagers.<br><br>")
 d7.save!
  
