@@ -13,10 +13,12 @@ Child.destroy_all
 User.destroy_all
 Disease.destroy_all
 
-# CSV.foreach(Rails.root.join("db/hospitals.csv")) do |row|
-# puts "creating #{row[0]}"
-# Hospital.create(name: row[0], address: row[1])
-#  end
+
+CSV.foreach(Rails.root.join("db/hospitals.csv")) do |row|
+  puts "creating #{row[0]}"
+  Hospital.create(name: row[0], address: row[1])
+end
+
 
 u1 = User.new(first_name: "Paula", last_name: "Pisa", email: "paula@test.fr", password: "123456")
 u1.save!
@@ -50,8 +52,8 @@ d1 = Disease.new(name: "Fièvre", symptoms: ["Fièvre"], behavior: "<p>
     <p><span class= 'warning' style='background-color: #FE7988; color: white; border: 1px solid #FE7988; font-weight: bolder;
     border-radius: 25px;'>Attention</span> de ne pas associer plusieurs médicaments contenant les mêmes
     molécules (ou des molécules de la même famille) comme du Doliprane® et de
-    l’Efferalgan®</p><br><br><br><br>", 
-when_consult: "<strong><span class = 'rose' style='background-color:#FE7988 ; color: white ; border: 1px solid #FE7988; font-weight: bolder;
+    l’Efferalgan®</p><br><br><br><br>",
+                 when_consult: "<strong><span class = 'rose' style='background-color:#FE7988 ; color: white ; border: 1px solid #FE7988; font-weight: bolder;
     border-radius: 25px;' >Consultez aux Urgences: </span></strong>
 <div list-style-type:none; margin-left: 2px;>
  <li>Si vous n'arrivez pas à réveiller votre enfant</li> 
@@ -61,7 +63,7 @@ when_consult: "<strong><span class = 'rose' style='background-color:#FE7988 ; co
  <li>Des tremblements ou des convulsions</li> 
 <li>En cas de convulsions (perte de contact, modification du tonus, mouvements anormaux des yeux ou des membres):
 <span class= 'warning' style='color: #FE7988';><strong>GARDEZ votre calme:</strong></span><br>
-<strong> "    "- </strong>Allongez votre enfant sur le côté afin de dégager ses voies respiratoires<br>
+<strong> " "- </strong>Allongez votre enfant sur le côté afin de dégager ses voies respiratoires<br>
 <strong>  - </strong>Eloignez le de tout objet susceptible de le blesser<br>
 <strong>  - </strong>N'essayez pas de lui ouvrir la bouche<br>
 <strong>  - </strong>Si possible notez la durée des convulsions, elles s'arrêtent généralement d'elles-mêmes en quelques minutes<br>
@@ -69,7 +71,7 @@ when_consult: "<strong><span class = 'rose' style='background-color:#FE7988 ; co
 </div><br>
 <span class = 'medoc' style='background-color: #66BBEC; color: white; border: 1px solid #66BBEC; font-weight: bolder; border-radius: 25px; '> *** </span>
 Si votre enfant ne présente pas de signes inquiètants, vous pouvez consulter au bout de 48 heures votre médecin traitant ou les urgences en cas d'impossibilité .<br><br><br><br>",
-need_know: " La température se mesure avec un thermomètre (au mieux en rectal, si vous prenez la température en axillaire ajoutez 0,5°C). <br><br>
+                 need_know: " La température se mesure avec un thermomètre (au mieux en rectal, si vous prenez la température en axillaire ajoutez 0,5°C). <br><br>
 La notion ‘il est chaud’ ne veut rien dire. On considère qu’un enfant a de la fièvre quand sa température dépasse 
 <span class = 'rose' style='background-color:#FE7988 ; color: white ; border: 1px solid #FE7988; font-weight: bolder;border-radius: 25px; padding: 2px;'>38°C</span>.
 Généralement,  ce n’est qu’au-dessus de <span class = 'rose' style='background-color:#FE7988 ; color: white ; border: 1px solid #FE7988; font-weight: bolder;
@@ -86,7 +88,6 @@ Seuls certains enfants (souvent avec un caractère familial) ont une susceptibil
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span> Lorsque l’on est soi-même enrhumé se couvrir la bouche lorsque l’on tousse avec son coude ou sa manche. Portez un masque lorsque l’on s’occupe de son bébé. Evitez d’embrasser son enfant sur le visage et sur les mains. <br><br><br><br>")
 
 d1.save!
-
 
 d2 = Disease.new(name: "Toux", symptoms: ["Toux"], behavior: " Les médicaments contre la toux ne servent à rien et <span style='text-decoration: underline; text-decoration-color: #FE7988;'> ne sont pas conseillés </span>car ils peuvent avoir des effets secondaires dangereux.<br><br>
 <span class = 'rose' style='background-color:#FE7988; color: white; border: 1px solid #FE7988; font-weight: bolder; border-radius: 25px;'><strong> Ne jamais donner de miel à un enfant de moins de 1 an (risque de botulisme).</strong></span><br><br>
@@ -205,9 +206,9 @@ Notez les quantités de biberons bues. Comptabilisez les selles et les vomisseme
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Une sécheresse des muqueuses (bouche et langue)<br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Une sécheresse cutanée (peau plissée)<br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Perte de poids importante<br>
-<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>S’il continue à vomir malgré la solution que vous lui avez proposée en fractionnée", 
-need_know: "La SRO est disponible en pharmacie sans ordonnance.", 
-prevention: " La gastro-entérite est une infection le plus souvent virale.<br>
+<span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>S’il continue à vomir malgré la solution que vous lui avez proposée en fractionnée",
+                 need_know: "La SRO est disponible en pharmacie sans ordonnance.",
+                 prevention: " La gastro-entérite est une infection le plus souvent virale.<br>
 Afin de diminuer le risque de contamination :
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Lavage systématique des mains après chaque change, avant chaque préparation alimentaire, après chaque contact de manière générale avec un enfant malade.<br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Lavage des surfaces et du matériel en contact avec l’enfant malade (table à langer, sucettes, biberons.. <br><br><br><br>")
@@ -215,7 +216,7 @@ Afin de diminuer le risque de contamination :
 d5.save!
 
 d6 = Disease.new(name: "Douleurs abdominales", symptoms: ["Douleurs abdominales"],
- behavior: " Le principal danger des vomissements c’est la déshydratation, c’est-à-dire un manque d’eau dans le corps.<br><br>
+                 behavior: " Le principal danger des vomissements c’est la déshydratation, c’est-à-dire un manque d’eau dans le corps.<br><br>
 Le meilleur moyen d’éviter ou de traiter une déshydratation est de donner à boire à votre enfant une<span class = 'rose' style='color:#FE7988 ; '><strong> Solution de réhydratation orale (SRO)</strong></span>.<br><br>
 Donnez souvent la SRO à boire à votre enfant, au début plusieurs fois par heure.<br><br>
 Si votre enfant vomit, donnez-lui la solution bien fraîche, au début toutes les 5 à 10 minutes, par petites gorgées ou même à la cuillère.<br><br>
@@ -240,8 +241,8 @@ Notez les quantités de biberons bues. Comptabilisez les selles et les vomisseme
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Une sécheresse des muqueuses (bouche et langue) et cutanée (peau plissée)<br><br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Perte de poids importante<br><br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>S’il continue à vomir malgré la solution que vous lui avez proposée en fractionnée<br><br><br><br>",
-need_know: "<br><br>La SRO est disponible en pharmacie sans ordonnance.", 
-prevention: " <brLa gastro-entérite est une infection le plus souvent virale.<br>
+                 need_know: "<br><br>La SRO est disponible en pharmacie sans ordonnance.",
+                 prevention: " <brLa gastro-entérite est une infection le plus souvent virale.<br>
 Afin de diminuer le risque de contamination :<br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Lavage systématique des mains après chaque change, avant chaque préparation alimentaire, après chaque contact de manière générale avec un enfant malade<br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Lavage des surfaces et du matériel en contact avec l’enfant malade (table à langer, sucettes, biberons...<br><br><br><br> ")
@@ -250,21 +251,21 @@ d6.save!
 
 d7 = Disease.new(name: "Brûlures", symptoms: ["Brûlures"], behavior: "Si votre enfant se brûle,<span class = 'rose' style='color:#FE7988 ; '><strong> ne paniquez pas</strong></span>. Refroidisser la brûlure à l’eau froide (<span class = 'rose' style='color:#FE7988 ; '><strong>15°C</strong></span> environ) pendant <span class = 'rose' style='color:#FE7988 ; '><strong>15 min</strong></span><br>
 Quel que soit leur degré de gravité, les brûlures nécessitent une prise en charge adaptée pour éviter des complications, une surinfection et la déshydratation",
- when_consult: "En termes d’étendue, une brûlure est grave lorsque sa surface est supérieure à la moitié de la paume de la main de la victime.<br>
+                 when_consult: "En termes d’étendue, une brûlure est grave lorsque sa surface est supérieure à la moitié de la paume de la main de la victime.<br>
  La gravité d’une brûlure dépend de son étendue, de sa localisation et de son degré.<br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Au premier degré, la peau est rouge, sans cloques.</span> <br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Au deuxième degré, la peau comporte des cloques remplies de liquide.</span> <br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Au troisième degré, la peau est noire ou blanchâtre et insensible. </span><br>
  Les brûlures localisées au niveau des yeux, du nez, des mains, des orifices naturels, des organes génitaux ou de l'intérieur des cuisses sont classées parmi les brûlures graves.<br>",
-  need_know: "Une brûlure peut être provoquée par la chaleur : air chaud, vapeur, eau bouillante, flamme, soleil, cigarette, etc. Mais aussi par un frottement, l’électricité ou une substance chimique.<br>
+                 need_know: "Une brûlure peut être provoquée par la chaleur : air chaud, vapeur, eau bouillante, flamme, soleil, cigarette, etc. Mais aussi par un frottement, l’électricité ou une substance chimique.<br>
   La prise en charge médicale des brûlures diffère selon leur origine.<br>
    Les enfants de moins de 5 ans représentent plus d’un quart des victimes hospitalisées pour brûlures. <br>
    Celles-ci sont le plus souvent causées par contact avec des liquides chauds. <br>
    Les contacts avec un solide chaud, par exemple, une plaque électrique, sont la deuxième cause de brûlures chez les enfants de moins de 4 ans.<br>
   Les complications sont avant tout locales. Le risque principal est que la cicatrisation soit de mauvaise qualité, ce qui aura des conséquences esthétiques et parfois fonctionnelles (peau rétractée).<br>
 En fonction de sa profondeur, la cicatrisation d’une brûlure peut être plus ou moins difficile.<br>
- Elle peut nécessiter des soins pendant plusieurs semaines", 
- prevention: "Des règles de prudence simples permettent le plus souvent d’éviter les brûlures :<br><br>
+ Elle peut nécessiter des soins pendant plusieurs semaines",
+                 prevention: "Des règles de prudence simples permettent le plus souvent d’éviter les brûlures :<br><br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Prévenez les coups de soleil, surtout chez les enfants (utilisez casquette, chapeau, tee-shirt, crème solaire à indice de protection élevé, etc.).<br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Ne laissez jamais les enfants seuls près d’une source de chaleur (cuisinière, four, bougies, feu de cheminée, grill, barbecue, etc.). Placez les casseroles contenant des aliments chauds hors de leur portée en tournant le manche vers le mur. Munissez la cuisinière d’un dispositif de protection.<br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Vérifiez la température de l’eau du bain, notamment pour les très jeunes enfants. Si l’eau du robinet est très chaude, faites-la régler.<br>
@@ -275,4 +276,3 @@ En fonction de sa profondeur, la cicatrisation d’une brûlure peut être plus 
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>N’effectuez jamais de branchements électriques sans avoir coupé l’arrivée d’électricité.<br>
 <span class = 'rose' style='color:#FE7988 ; '><strong>* </strong></span>Pour éviter les brûlures chimiques, tenez hors de portée des enfants les produits ménagers.<br><br>")
 d7.save!
- 
