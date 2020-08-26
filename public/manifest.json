@@ -1,0 +1,22 @@
+{
+    "short_name": "Urgences Enfant",
+    "name": "Urgences Enfant",
+    "icons": [
+      {
+        "src": "/icons/UE-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/icons/UE-310x310.png",
+        "sizes": "310x310",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "#66BBEC",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#66BBEC"
+  }
+  
