@@ -35,7 +35,7 @@
     padding: 10px;
 }
 
-.trash a:link{
+.trash a:link {
     text-decoration: none !important;
 }
 
@@ -46,7 +46,7 @@
     padding: 10px;
 }
 
-.edit a:link{
+.edit a:link {
     text-decoration: none !important;
 }
 
@@ -62,14 +62,14 @@
     flex-direction: column;
     align-items: center;
     height: 25vh;
-    padding:10px;
+    padding: 10px;
 }
 
 .btn-deconnexion {
     width: 140px;
     border-radius: 5px;
     background-color: #EBEFEA;
-    color:#95999A;
+    color: #95999A;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
     text-align: center;
     padding: 2px;
@@ -77,7 +77,7 @@
 }
 
 .btn-deconnexion:hover {
-    color:#95999A;
+    color: #95999A;
     text-decoration: none;
 }
 
@@ -85,7 +85,7 @@
     width: 210px;
     border-radius: 5px;
     background-color: #EBEFEA;
-    color:#95999A;
+    color: #95999A;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
     text-align: center;
     text-decoration: none;
@@ -94,15 +94,15 @@
 }
 
 .btn-ajout-enfant:hover {
-    color:#95999A;
+    color: #95999A;
     text-decoration: none;
 }
 
 .link-cards {
-    color:#95999A;
+    color: #95999A;
 }
 
 .link-cards:hover {
-    color:#95999A;
+    color: #95999A;
     text-decoration: none;
 }

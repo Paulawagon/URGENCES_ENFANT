@@ -1,29 +1,27 @@
- <h2 class="mt-3">Symptomes</h2>
-
+<h2 class="mt-3">Symptomes</h2>
 <!-- <form class="form"> -->
 <div class="container">
   <%= simple_form_for([@child, @analysis]) do |f| %>
-    <div class=" container_new_analysis inputGroup">
-        <%= f.input :symptoms, collection: @symptoms, as: :check_boxes, label_on: :left %>
-      </div>
-      <%= f.submit "Analyse", class: "btn-analyse-home centrage-btn" %>
-  <!-- </form> -->		
+  <div class=" container_new_analysis inputGroup">
+    <%= f.input :symptoms, collection: @symptoms, as: :check_boxes, label_on: :left %>
+  </div>
+  <%= f.submit "Analyse", class: "btn-analyse-home centrage-btn" %>
+  <!-- </form> -->
   <% end %>
 </div>
-
 <footer>
   <div id="navbar-contenair">
     <div class="icon_name">
-    <i class="fas fa-home"></i>
-    <%= link_to "Accueil", root_path, class: "link-footer" %>
+      <i class="fas fa-home"></i>
+      <%= link_to "Accueil", root_path, class: "link-footer" %>
     </div>
     <div class="icon_name">
-    <i class="far fa-user-circle"></i>
-    <%= link_to "Profil", profil_path, class: "link-footer" %>
+      <i class="far fa-user-circle"></i>
+      <%= link_to "Profil", profil_path, class: "link-footer" %>
     </div>
     <div class="icon_name">
-    <i class="fas fa-book-open"></i>
-    <%= link_to "Index", diseases_path, class: "link-footer" %>
+      <i class="fas fa-book-open"></i>
+      <%= link_to "Index", diseases_path, class: "link-footer" %>
     </div>
   </div>
 </footer>
