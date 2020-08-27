@@ -1,6 +1,9 @@
+<% content_for :meta_title, "#{@disease.name}" %>
+<% content_for :meta_description, @disease.description %>
+
 <h2 class="mt-3"><%= @disease.name %></h2>
 <div class="chiante">
-	<% if @symptoms.length > 1  %>
+	<% if @symptoms.length > 1 %>
 	<h6>En cas de symptômes associés veuillez vous référer à l'Index</h6>
 	<% end %>
 </div>
