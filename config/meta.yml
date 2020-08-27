@@ -1,0 +1,5 @@
+meta_product_name: "Urgences Enfant"
+meta_title: "Urgences Enfant - Quand consulter ?"
+meta_description: "Vous n'êtes pas sûr(e) de savoir comment réagir lorsque boutchou est malade ? Pas de soucis !"
+meta_image: "background.png" # should exist in `app/assets/images/`
+twitter_account: "@UrgE_twitter_account"   # required for Twitter Cards
